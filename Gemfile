@@ -3,27 +3,16 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
-
 gem 'devise'
-
 gem 'high_voltage', '~> 2.2.1'
-
 gem "gritter", "1.1.0"
-
 gem 'simple_form'
-
 gem 'friendly_id'
-
 gem 'kaminari'
-
 gem "cancan"
-
 gem "letter_opener", :group => :development
-
 gem 'cells'
-
 gem 'paperclip'
-
 gem 'bootstrap-sass'
 # Use sqlite3 as the database for Active Record
 
