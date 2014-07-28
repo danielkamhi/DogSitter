@@ -11,29 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140728194116) do
-
-  create_table "dogs", force: true do |t|
-    t.string   "breed"
-    t.integer  "age"
-    t.boolean  "medical_status"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "owners", force: true do |t|
-    t.integer  "dog_id"
-    t.string   "name"
-    t.string   "email"
-    t.string   "password"
-    t.boolean  "doggie_cam"
-    t.boolean  "insurance"
-    t.boolean  "private_care"
-    t.boolean  "full_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "owners", ["dog_id"], name: "index_owners_on_dog_id"
+ActiveRecord::Schema.define(version: 0) do
 
 end
