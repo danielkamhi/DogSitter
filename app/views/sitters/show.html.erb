@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dog:</strong>
+  <%= @sitter.dog %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @sitter.summary %>
+</p>
+
+<p>
+  <strong>Years of experience:</strong>
+  <%= @sitter.years_of_experience %>
+</p>
+
+<p>
+  <strong>Insurance:</strong>
+  <%= @sitter.insurance %>
+</p>
+
+<p>
+  <strong>Full time:</strong>
+  <%= @sitter.full_time %>
+</p>
+
+<p>
+  <strong>Doggie cam:</strong>
+  <%= @sitter.doggie_cam %>
+</p>
+
+<p>
+  <strong>Solo care:</strong>
+  <%= @sitter.solo_care %>
+</p>
+
+<%= link_to 'Edit', edit_sitter_path(@sitter) %> |
+<%= link_to 'Back', sitters_path %>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :owners
-  devise_for :dogs
-  resources :owners
+  resources :sitters
+
+  resources :users
 
   resources :dogs
 
