@@ -9,12 +9,13 @@ Rails.application.routes.draw do
 
   get '/home', to: redirect('/')
 
+# devise_for :users
   root :to => 'high_voltage/pages#show', id: 'home'
   devise_for :users
   resources :sitters
   resources :users
   resources :dogs
-
+# , :controllers => { :registrations => "registrations" }
   #root to: "users#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
