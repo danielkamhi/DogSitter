@@ -4,8 +4,6 @@ class CreateUsers < ActiveRecord::Migration
       t.references :dog, index: true
       t.string :fname
       t.string :lname
-      t.string :email
-      t.string :password
       t.boolean :sitter
 
       t.timestamps
