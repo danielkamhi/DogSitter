@@ -24,7 +24,10 @@ class DogsController < ApplicationController
   # POST /dogs
   # POST /dogs.json
   def create
-    @dog = Dog.new(dog_params)
+    @user = User.find(session[:user_id])
+    @dog = Dog.new(user_id: @user.id)
+
+    # @dog = Dog.new(dog_params)
 
     respond_to do |format|
       if @dog.save
