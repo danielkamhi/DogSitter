@@ -10,7 +10,14 @@
 <nav>
 	
 
-	<%= yield %>
+ </div>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+       <%= render 'layouts/messages' %>
+       <%= yield %>
+    </main>
+
 
 </body>
 </html>
