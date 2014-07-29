@@ -27,9 +27,14 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     respond_to do |format|
-      if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
+      if @user.save 
+        if @user.sitter?
+            format.html { redirect_to new_sitter_path, notice: 'Sitter was successfully created.' }
+            format.json { render :show, status: :created, location: new_sitter_path }
+         else
+            format.html { redirect_to new_dog_path, notice: 'Owner was successfully created.' }
+            format.json { render :show, status: :created, location: @user }
+         end  
       else
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
