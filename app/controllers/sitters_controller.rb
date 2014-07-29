@@ -24,7 +24,10 @@ class SittersController < ApplicationController
   # POST /sitters
   # POST /sitters.json
   def create
-    @sitter = Sitter.new(sitter_params)
+    @user = current_user.id
+    @sitter = Sitter.create(sitter_params)
+    @sitter.update(user_id: @user)
+   
 
     respond_to do |format|
       if @sitter.save

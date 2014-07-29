@@ -14,6 +14,6 @@
   <strong>Medical status:</strong>
   <%= @dog.medical_status %>
 </p>
-
+<%= link_to 'Add Another Dog', new_dog_path %>
 <%= link_to 'Edit', edit_dog_path(@dog) %> |
 <%= link_to 'Back', dogs_path %>

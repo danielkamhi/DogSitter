@@ -24,9 +24,9 @@ class DogsController < ApplicationController
   # POST /dogs
   # POST /dogs.json
   def create
-    @user = User.find(session[:user_id])
-    @dog = Dog.new(user_id: @user.id)
-
+    @user = current_user.id
+    @dog = Dog.create(dog_params)
+    @dog.update(user_id: @user)
     # @dog = Dog.new(dog_params)
 
     respond_to do |format|
@@ -72,6 +72,6 @@ class DogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dog_params
-      params.require(:dog).permit(:breed, :age, :medical_status)
+      params.require(:dog).permit(:breed, :age, :medical_status, :user_id)
     end
 end

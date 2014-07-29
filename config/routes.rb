@@ -7,15 +7,17 @@ Rails.application.routes.draw do
   get '/privacy'  => 'high_voltage/pages#show', id: 'privacy'
   get '/terms'    => 'high_voltage/pages#show', id: 'terms'
 
-  get '/home', to: redirect('/')
+  # get '/home', to: redirect('/')
 
 # devise_for :users
   root :to => 'high_voltage/pages#show', id: 'home'
-  devise_for :users
+  devise_for :users, :controllers => { 
+    :registrations => :registrations
+  }
   resources :sitters
   resources :users
   resources :dogs
-# , :controllers => { :registrations => "registrations" }
+# 
   #root to: "users#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
