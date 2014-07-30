@@ -1,0 +1,1523 @@
+Warning, new version of rvm available '1.25.28', you are using older version '1.25.24'.
+You can disable this warning with:    echo rvm_autoupdate_flag=0 >> ~/.rvmrc
+You can enable  auto-update  with:    echo rvm_autoupdate_flag=2 >> ~/.rvmrc
++ 1406736035.007938128 /scripts/cli : __rvm_parse_args()  720 > [[ -z '' ]]
++ 1406736035.010816392 /scripts/cli : __rvm_parse_args()  720 > [[ -n '' ]]
++ 1406736035.014221612 /scripts/cli : __rvm_parse_args()  723 > [[ error == '' ]]
++ 1406736035.018124781 /scripts/cli : __rvm_parse_args()  723 > [[ 0 -eq 1 ]]
++ 1406736035.021548343 /scripts/cli : __rvm_parse_args()  723 > [[ -n '' ]]
++ 1406736035.024694762 /scripts/cli : __rvm_parse_args()  15 > [[ -n install ]]
++ 1406736035.027690671 /scripts/cli : __rvm_parse_args()  17 > rvm_token=install
++ 1406736035.030843620 /scripts/cli : __rvm_parse_args()  19 > ((  1 > 0  ))
++ 1406736035.034283358 /scripts/cli : __rvm_parse_args()  21 > next_token=2.1.0
++ 1406736035.037985204 /scripts/cli : __rvm_parse_args()  22 > shift
++ 1406736035.041026748 /scripts/cli : __rvm_parse_args()  98 > case "$rvm_token" in
++ 1406736035.044141382 /scripts/cli : __rvm_parse_args()  101 > case "$rvm_token" in
++ 1406736035.047040534 /scripts/cli : __rvm_parse_args()  54 > export install_flag=1
++ 1406736035.050937118 /scripts/cli : __rvm_parse_args()  54 > install_flag=1
++ 1406736035.056283874 /scripts/cli : __rvm_parse_args()  55 > rvm_action=install
++ 1406736035.060162319 /scripts/cli : __rvm_parse_args()  720 > [[ -z install ]]
++ 1406736035.063476317 /scripts/cli : __rvm_parse_args()  723 > [[ error == \i\n\s\t\a\l\l ]]
++ 1406736035.066429094 /scripts/cli : __rvm_parse_args()  723 > [[ 0 -eq 1 ]]
++ 1406736035.069995332 /scripts/cli : __rvm_parse_args()  723 > [[ -n '' ]]
++ 1406736035.073397873 /scripts/cli : __rvm_parse_args()  15 > [[ -n 2.1.0 ]]
++ 1406736035.076634021 /scripts/cli : __rvm_parse_args()  17 > rvm_token=2.1.0
++ 1406736035.079779450 /scripts/cli : __rvm_parse_args()  19 > ((  0 > 0  ))
++ 1406736035.083178365 /scripts/cli : __rvm_parse_args()  24 > next_token=
++ 1406736035.087125550 /scripts/cli : __rvm_parse_args()  98 > case "$rvm_token" in
++ 1406736035.091067887 /scripts/cli : __rvm_parse_args()  101 > case "$rvm_token" in
++ 1406736035.094899247 /scripts/cli : __rvm_parse_args()  281 > rvm_action=install
++ 1406736035.098489164 /scripts/cli : __rvm_parse_args()  282 > rvm_ruby_string=2.1.0
++ 1406736035.102123027 /scripts/cli : __rvm_parse_args()  283 > rvm_ruby_strings=2.1.0
++ 1406736035.106068791 /scripts/cli : __rvm_parse_args()  720 > [[ -z install ]]
++ 1406736035.109893835 /scripts/cli : __rvm_parse_args()  723 > [[ error == \i\n\s\t\a\l\l ]]
++ 1406736035.114557608 /scripts/cli : __rvm_parse_args()  723 > [[ 0 -eq 1 ]]
++ 1406736035.117953329 /scripts/cli : __rvm_parse_args()  723 > [[ -n '' ]]
++ 1406736035.121219402 /scripts/cli : __rvm_parse_args()  15 > [[ -n '' ]]
++ 1406736035.124445073 /scripts/cli : __rvm_parse_args()  728 > : rvm_ruby_args:0::
++ 1406736035.128255557 /scripts/cli : __rvm_parse_args()  730 > [[ -n '' ]]
++ 1406736035.132438923 /scripts/cli : rvm()  756 > result=0
++ 1406736035.136522894 /scripts/cli : rvm()  757 > : rvm_ruby_args:0::
++ 1406736035.140065855 /scripts/cli : rvm()  759 > ((  1 == 0  ))
++ 1406736035.143900300 /scripts/cli : rvm()  759 > set -o xtrace
++ 1406736035.152063221 /scripts/cli : rvm()  761 > ((  result  ))
++ 1406736035.155723398 /scripts/cli : rvm()  833 > case "${rvm_action:=help}" in
++ 1406736035.160002949 /scripts/cli : rvm()  935 > export rvm_path
++ 1406736035.164329226 /scripts/cli : rvm()  936 > __rvm_cli_install_ruby 2.1.0
++ 1406736035.168345554 /scripts/functions/cli : __rvm_cli_install_ruby()  21 > [[ -n 2.1.0 ]]
++ 1406736035.172501073 /scripts/functions/cli : __rvm_cli_install_ruby()  23 > typeset __rubies __installed __missing __search_list
++ 1406736035.176113206 /scripts/functions/cli : __rvm_cli_install_ruby()  24 > typeset -a __search
++ 1406736035.179286513 /scripts/functions/cli : __rvm_cli_install_ruby()  25 > __rvm_custom_separated_array __search , 2.1.0
++ 1406736035.183282192 /scripts/functions/utility : __rvm_custom_separated_array()  1 > typeset IFS
++ 1406736035.186790174 /scripts/functions/utility : __rvm_custom_separated_array()  2 > IFS=,
++ 1406736035.190349404 /scripts/functions/utility : __rvm_custom_separated_array()  3 > [[ -n '' ]]
++ 1406736035.194159452 /scripts/functions/utility : __rvm_custom_separated_array()  5 > eval '__search+=( $3 )'
+++ 1406736035.197760113 /scripts/functions/utility : __rvm_custom_separated_array()  -218 > __search+=($3)
++ 1406736035.201109991 /scripts/functions/cli : __rvm_cli_install_ruby()  42 > __rubies=2.1.0
++ 1406736035.205292064 /scripts/functions/cli : __rvm_cli_install_ruby()  43 > __search_list=
++ 1406736035.210587407 /scripts/functions/cli : __rvm_cli_install_ruby()  44 > __rvm_cli_rubies_select
++ 1406736035.214763117 /scripts/functions/cli : __rvm_cli_rubies_select()  1 > typeset __ruby
++ 1406736035.218915720 /scripts/functions/cli : __rvm_cli_rubies_select()  280 > for __ruby in '"${__search[@]}"'
++ 1406736035.222573167 /scripts/functions/cli : __rvm_cli_rubies_select()  4 > rvm_ruby_string=2.1.0
++ 1406736035.226632792 /scripts/functions/cli : __rvm_cli_rubies_select()  5 > __rvm_select
++ 1406736035.230712562 /scripts/functions/selector : __rvm_select()  1 > true
++ 1406736035.235285304 /scripts/functions/selector : __rvm_select()  3 > __rvm_select_set_variable_defaults
++ 1406736035.239594226 /scripts/functions/selector : __rvm_select_set_variable_defaults()  1 > export -a rvm_configure_flags rvm_patch_names rvm_ree_options rvm_make_flags
++ 1406736035.242973265 /scripts/functions/selector : __rvm_select_set_variable_defaults()  2 > export GEM_HOME GEM_PATH MY_RUBY_HOME RUBY_VERSION IRBRC
++ 1406736035.247378671 /scripts/functions/selector : __rvm_select_set_variable_defaults()  3 > export rvm_env_string rvm_action rvm_alias_expanded rvm_archive_extension rvm_bin_flag rvm_bin_path rvm_debug_flag rvm_default_flag rvm_delete_flag rvm_docs_type rvm_dump_environment_flag rvm_error_message rvm_expanding_aliases rvm_file_name rvm_gemdir_flag rvm_gemset_name rvm_gemstone_package_file rvm_gemstone_url rvm_head_flag rvm_hook rvm_install_on_use_flag rvm_llvm_flag rvm_loaded_flag rvm_niceness rvm_nightly_flag rvm_only_path_flag rvm_parse_break rvm_patch_original_pwd rvm_pretty_print_flag rvm_proxy rvm_quiet_flag rvm_reload_flag rvm_remove_flag rvm_ruby_alias rvm_ruby_args rvm_ruby_binary rvm_ruby_bits rvm_ruby_configure rvm_ruby_file rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_global_gems_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_major_version rvm_ruby_make rvm_ruby_make_install rvm_ruby_minor_version rvm_ruby_mode rvm_ruby_name rvm_ruby_package_file rvm_ruby_package_name rvm_ruby_patch rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_sha rvm_ruby_string rvm_ruby_strings rvm_ruby_tag rvm_ruby_url rvm_ruby_user_tag rvm_ruby_version rvm_script_name rvm_sdk rvm_silent_flag rvm_sticky_flag rvm_system_flag rvm_token rvm_trace_flag rvm_use_flag rvm_user_flag rvm_verbose_flag rvm_wrapper_name
++ 1406736035.251347708 /scripts/functions/selector : __rvm_select()  82 > __rvm_select_detect_ruby_string ''
++ 1406736035.254938642 /scripts/functions/selector : __rvm_select_detect_ruby_string()  1 > rvm_ruby_string=2.1.0
++ 1406736035.258706049 /scripts/functions/selector : __rvm_select_detect_ruby_string()  3 > [[ -z 2.1.0 ]]
++ 1406736035.262239254 /scripts/functions/selector : __rvm_select()  76 > __rvm_ruby_string
++ 1406736035.266066159 /scripts/functions/selector : __rvm_ruby_string()  9 > true 0 0
++ 1406736035.269618472 /scripts/functions/selector : __rvm_ruby_string()  10 > rvm_expanding_aliases=
++ 1406736035.273010268 /scripts/functions/selector : __rvm_ruby_string()  12 > true '' '' '' '' '' '' '' @ 2.1.0 0 0
++ 1406736035.276102224 /scripts/functions/selector : __rvm_ruby_string()  18 > [[ 2.1.0 == *\@* ]]
++ 1406736035.280012710 /scripts/functions/selector : __rvm_ruby_string()  25 > ((  rvm_expanding_aliases == 0  ))
++ 1406736035.283769827 /scripts/functions/selector : __rvm_ruby_string()  26 > [[ -n 2.1.0 ]]
++ 1406736035.286825861 /scripts/functions/selector : __rvm_ruby_string()  26 > [[ 2.1.0 != \s\y\s\t\e\m ]]
++ 1406736035.289832046 /scripts/functions/selector : __rvm_ruby_string()  29 > [[ -f /usr/local/rvm/config/alias ]]
++ 1406736035.293139074 /scripts/functions/selector : __rvm_ruby_string()  29 > [[ -s /usr/local/rvm/config/alias ]]
+++ 1406736035.297777821 /scripts/functions/selector : __rvm_ruby_string()  -255 > __rvm_db_ /usr/local/rvm/config/alias 2.1.0
+++ 1406736035.301582385 /scripts/functions/db : __rvm_db_()  1 > typeset __db __key __value
+++ 1406736035.304568928 /scripts/functions/db : __rvm_db_()  2 > __db=/usr/local/rvm/config/alias
+++ 1406736035.308710403 /scripts/functions/db : __rvm_db_()  3 > __key=2.1.0
+++ 1406736035.312747199 /scripts/functions/db : __rvm_db_()  4 > shift 2
+++ 1406736035.316120814 /scripts/functions/db : __rvm_db_()  5 > __value=
+++ 1406736035.319399580 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
+++ 1406736035.323235463 /scripts/functions/db : __rvm_db_()  11 > __rvm_db_get /usr/local/rvm/config/alias 2.1.0
+++ 1406736035.327058472 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/alias ]]
+++ 1406736035.331066379 /scripts/functions/db : __rvm_db_get()  2 > __rvm_grep '^2.1.0=' /usr/local/rvm/config/alias
+++ 1406736035.331601294 /scripts/functions/db : __rvm_db_get()  2 > __rvm_sed -e 's#^2.1.0=##' -e '/^$/d'
+++ 1406736035.335532871 /scripts/functions/support : __rvm_grep()  0 > GREP_OPTIONS=
+++ 1406736035.335988834 /scripts/functions/support : __rvm_sed()  0 > sed -e 's#^2.1.0=##' -e '/^$/d'
+++ 1406736035.339481790 /scripts/functions/support : __rvm_grep()  0 > grep '^2.1.0=' /usr/local/rvm/config/alias
+++ 1406736035.344079552 /scripts/functions/support : __rvm_grep()  0 > return 1
++ 1406736035.348962323 /scripts/functions/selector : __rvm_ruby_string()  30 > expanded_alias_name=
++ 1406736035.351815562 /scripts/functions/selector : __rvm_ruby_string()  31 > [[ -n '' ]]
++ 1406736035.354992423 /scripts/functions/selector : __rvm_ruby_string()  35 > [[ 2.1.0 == default ]]
++ 1406736035.357688651 /scripts/functions/selector : __rvm_ruby_string()  41 > [[ 2.1.0 == *\@* ]]
++ 1406736035.360609470 /scripts/functions/selector : __rvm_ruby_string()  48 > [[ -n '' ]]
++ 1406736035.363406245 /scripts/functions/selector : __rvm_ruby_string()  54 > __rvm_ruby_string_parse
++ 1406736035.366728595 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  1 > typeset __check_latest
++ 1406736035.370848335 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  2 > __check_latest=0
++ 1406736035.374322677 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  5 > __rvm_ruby_string_parse_
++ 1406736035.378234838 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  1 > typeset ruby_string gemset_name expanded_alias_name repo_url branch_name ruby_name
++ 1406736035.381604988 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  4 > ruby_string=2.1.0
++ 1406736035.385235759 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  5 > gemset_name=
++ 1406736035.388956154 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  6 > repo_url=
++ 1406736035.392093945 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  7 > branch_name=
++ 1406736035.395087339 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  8 > ruby_name=
++ 1406736035.399207671 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  10 > __rvm_unset_ruby_variables
++ 1406736035.402965954 /scripts/functions/env : __rvm_unset_ruby_variables()  2 > unset rvm_env_string rvm_ruby_string rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_log_path rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_tag rvm_ruby_version rvm_head_flag rvm_ruby_package_file rvm_ruby_configure rvm_ruby_name rvm_ruby_url rvm_ruby_global_gems_path rvm_ruby_args rvm_ruby_name rvm_llvm_flag
++ 1406736035.406078985 /scripts/functions/env : __rvm_unset_ruby_variables()  3 > __rvm_load_rvmrc
++ 1406736035.409212249 /scripts/functions/init : __rvm_load_rvmrc()  1 > typeset _file
++ 1406736035.412182741 /scripts/functions/init : __rvm_load_rvmrc()  2 > typeset -a rvm_rvmrc_files
++ 1406736035.415314282 /scripts/functions/init : __rvm_load_rvmrc()  3 > ((  0 == 1  ))
++ 1406736035.418818708 /scripts/functions/init : __rvm_load_rvmrc()  8 > [[ -n 0022 ]]
++ 1406736035.422062970 /scripts/functions/init : __rvm_load_rvmrc()  10 > rvm_rvmrc_files=("/etc/rvmrc" "$HOME/.rvmrc")
++ 1406736035.425325247 /scripts/functions/init : __rvm_load_rvmrc()  11 > [[ -n /usr/local ]]
++ 1406736035.428569106 /scripts/functions/init : __rvm_load_rvmrc()  11 > [[ /home/ubuntu/.rvmrc -ef /usr/local/.rvmrc ]]
++ 1406736035.431929561 /scripts/functions/init : __rvm_load_rvmrc()  12 > rvm_rvmrc_files+=("${rvm_prefix}/.rvmrc")
++ 1406736035.435019663 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
++ 1406736035.438020021 /scripts/functions/init : __rvm_load_rvmrc()  16 > [[ -s /etc/rvmrc ]]
++ 1406736035.441499958 /scripts/functions/init : __rvm_load_rvmrc()  18 > __rvm_grep '^\s*rvm .*$' /etc/rvmrc
++ 1406736035.456475768 /scripts/functions/init : __rvm_load_rvmrc()  -202 > source /etc/rvmrc
+++ 1406736035.459805151 /etc/rvmrc : source()  1 > umask u=rwx,g=rwx,o=rx
++ 1406736035.463082190 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
++ 1406736035.466459554 /scripts/functions/init : __rvm_load_rvmrc()  -213 > [[ -s /home/ubuntu/.rvmrc ]]
++ 1406736035.469993967 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
++ 1406736035.583210299 /scripts/functions/init : __rvm_load_rvmrc()  -213 > [[ -s /usr/local/.rvmrc ]]
++ 1406736035.587265173 /scripts/functions/init : __rvm_load_rvmrc()  -198 > return 0
++ 1406736035.590681824 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -176 > rvm_ruby_repo_url=
++ 1406736035.593564642 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -175 > rvm_ruby_repo_branch=
++ 1406736035.596709707 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -174 > rvm_ruby_name=
++ 1406736035.599857595 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -171 > [[ -z 2.1.0 ]]
++ 1406736035.607169151 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -171 > [[ 2.1.0 == \c\u\r\r\e\n\t ]]
++ 1406736035.610623799 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -158 > strings=()
++ 1406736035.614274223 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -157 > __rvm_custom_separated_array strings - 2.1.0
++ 1406736035.618315629 /scripts/functions/utility : __rvm_custom_separated_array()  1 > typeset IFS
++ 1406736035.622530584 /scripts/functions/utility : __rvm_custom_separated_array()  2 > IFS=-
++ 1406736035.625914497 /scripts/functions/utility : __rvm_custom_separated_array()  3 > [[ -n '' ]]
++ 1406736035.628844267 /scripts/functions/utility : __rvm_custom_separated_array()  5 > eval 'strings+=( $3 )'
+++ 1406736035.632934410 /scripts/functions/utility : __rvm_custom_separated_array()  -218 > strings+=($3)
++ 1406736035.636261658 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -146 > rvm_ruby_string=2.1.0
++ 1406736035.639102422 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  79 > for string in '${strings[@]}'
++ 1406736035.642928245 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  81 > case "$string" in
++ 1406736035.646879678 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -86 > rvm_ruby_version=2.1.0
++ 1406736035.650849583 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -85 > rvm_ruby_revision=
++ 1406736035.654338210 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -84 > rvm_ruby_tag=
++ 1406736035.657812433 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  3 > [[ -z '' ]]
++ 1406736035.661013611 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  3 > [[ -n 2.1.0 ]]
++ 1406736035.664539533 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  228 > case "${rvm_ruby_version}" in
++ 1406736035.668120128 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  7 > rvm_ruby_interpreter=ruby
++ 1406736035.671563170 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  10 > true
++ 1406736035.674651681 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  54 > ((  0 == 1  ))
++ 1406736035.677573071 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  69 > __rvm_ruby_string_parse_
++ 1406736035.680925460 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  1 > typeset ruby_string gemset_name expanded_alias_name repo_url branch_name ruby_name
++ 1406736035.684642270 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  4 > ruby_string=2.1.0
++ 1406736035.688251938 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  5 > gemset_name=
++ 1406736035.691548086 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  6 > repo_url=
++ 1406736035.694810804 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  7 > branch_name=
++ 1406736035.697681029 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  8 > ruby_name=
++ 1406736035.701089981 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  10 > __rvm_unset_ruby_variables
++ 1406736035.704854302 /scripts/functions/env : __rvm_unset_ruby_variables()  2 > unset rvm_env_string rvm_ruby_string rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_log_path rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_tag rvm_ruby_version rvm_head_flag rvm_ruby_package_file rvm_ruby_configure rvm_ruby_name rvm_ruby_url rvm_ruby_global_gems_path rvm_ruby_args rvm_ruby_name rvm_llvm_flag
++ 1406736035.708701945 /scripts/functions/env : __rvm_unset_ruby_variables()  3 > __rvm_load_rvmrc
++ 1406736035.712745122 /scripts/functions/init : __rvm_load_rvmrc()  1 > typeset _file
++ 1406736035.716516139 /scripts/functions/init : __rvm_load_rvmrc()  2 > typeset -a rvm_rvmrc_files
++ 1406736035.720595021 /scripts/functions/init : __rvm_load_rvmrc()  3 > ((  0 == 1  ))
++ 1406736035.723977398 /scripts/functions/init : __rvm_load_rvmrc()  8 > [[ -n 0022 ]]
++ 1406736035.727340250 /scripts/functions/init : __rvm_load_rvmrc()  10 > rvm_rvmrc_files=("/etc/rvmrc" "$HOME/.rvmrc")
++ 1406736035.730726738 /scripts/functions/init : __rvm_load_rvmrc()  11 > [[ -n /usr/local ]]
++ 1406736035.733970344 /scripts/functions/init : __rvm_load_rvmrc()  11 > [[ /home/ubuntu/.rvmrc -ef /usr/local/.rvmrc ]]
++ 1406736035.737783045 /scripts/functions/init : __rvm_load_rvmrc()  12 > rvm_rvmrc_files+=("${rvm_prefix}/.rvmrc")
++ 1406736035.740829336 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
++ 1406736035.744026106 /scripts/functions/init : __rvm_load_rvmrc()  16 > [[ -s /etc/rvmrc ]]
++ 1406736035.747493092 /scripts/functions/init : __rvm_load_rvmrc()  18 > __rvm_grep '^\s*rvm .*$' /etc/rvmrc
++ 1406736035.762659868 /scripts/functions/init : __rvm_load_rvmrc()  -202 > source /etc/rvmrc
+++ 1406736035.765792945 /etc/rvmrc : source()  1 > umask u=rwx,g=rwx,o=rx
++ 1406736035.768761112 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
++ 1406736035.772143361 /scripts/functions/init : __rvm_load_rvmrc()  -213 > [[ -s /home/ubuntu/.rvmrc ]]
++ 1406736035.775089714 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
++ 1406736035.777927056 /scripts/functions/init : __rvm_load_rvmrc()  -213 > [[ -s /usr/local/.rvmrc ]]
++ 1406736035.781129494 /scripts/functions/init : __rvm_load_rvmrc()  -198 > return 0
++ 1406736035.784150864 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -176 > rvm_ruby_repo_url=
++ 1406736035.787011185 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -175 > rvm_ruby_repo_branch=
++ 1406736035.789825099 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -174 > rvm_ruby_name=
++ 1406736035.792629257 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -171 > [[ -z 2.1.0 ]]
++ 1406736035.795904344 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -171 > [[ 2.1.0 == \c\u\r\r\e\n\t ]]
++ 1406736035.799466285 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -158 > strings=()
++ 1406736035.802724785 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -157 > __rvm_custom_separated_array strings - 2.1.0
++ 1406736035.805954584 /scripts/functions/utility : __rvm_custom_separated_array()  1 > typeset IFS
++ 1406736035.808852953 /scripts/functions/utility : __rvm_custom_separated_array()  2 > IFS=-
++ 1406736035.811901617 /scripts/functions/utility : __rvm_custom_separated_array()  3 > [[ -n '' ]]
++ 1406736035.814849804 /scripts/functions/utility : __rvm_custom_separated_array()  5 > eval 'strings+=( $3 )'
+++ 1406736035.817897272 /scripts/functions/utility : __rvm_custom_separated_array()  -218 > strings+=($3)
++ 1406736035.822258577 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -146 > rvm_ruby_string=2.1.0
++ 1406736035.825634041 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  79 > for string in '${strings[@]}'
++ 1406736035.828776425 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  81 > case "$string" in
++ 1406736035.832169526 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -86 > rvm_ruby_version=2.1.0
++ 1406736035.835309371 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -85 > rvm_ruby_revision=
++ 1406736035.838528662 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -84 > rvm_ruby_tag=
++ 1406736035.842005564 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  3 > [[ -z '' ]]
++ 1406736035.844968031 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  3 > [[ -n 2.1.0 ]]
++ 1406736035.847669911 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  228 > case "${rvm_ruby_version}" in
++ 1406736035.850784281 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  7 > rvm_ruby_interpreter=ruby
++ 1406736035.853721415 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  10 > true
++ 1406736035.857038010 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  72 > ((  __check_latest  ))
++ 1406736035.859804621 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  80 > [[ -z ruby ]]
++ 1406736035.862893927 /scripts/functions/selector : __rvm_ruby_string()  119 > __rvm_ruby_string_installed
++ 1406736035.865679396 /scripts/functions/selector : __rvm_ruby_string_installed()  3 > [[ -n ruby ]]
++ 1406736035.868539770 /scripts/functions/selector : __rvm_ruby_string_installed()  3 > [[ -n 2.1.0 ]]
++ 1406736035.871508855 /scripts/functions/selector : __rvm_ruby_string_installed()  3 > [[ -d /usr/local/rvm/rubies/2.1.0 ]]
++ 1406736035.874642746 /scripts/functions/selector : __rvm_ruby_string()  75 > __rvm_ruby_string_remotely_available
++ 1406736035.877675740 /scripts/functions/selector : __rvm_ruby_string_remotely_available()  1 > ((  0 == 1  ))
++ 1406736035.880824793 /scripts/functions/selector : __rvm_ruby_string()  69 > __rvm_ruby_string_autodetect
++ 1406736035.883962655 /scripts/functions/selector : __rvm_ruby_string_autodetect()  5 > [[ -z 2.1.0 ]]
++ 1406736035.887235603 /scripts/functions/selector : __rvm_ruby_string_autodetect()  24 > ((  0  ))
++ 1406736035.890753226 /scripts/functions/selector : __rvm_ruby_string_autodetect()  30 > rvm_ruby_string=ruby-2.1.0
++ 1406736035.893982713 /scripts/functions/selector : __rvm_ruby_string_autodetect()  32 > [[ ruby == \e\x\t ]]
++ 1406736035.897190750 /scripts/functions/selector : __rvm_ruby_string_autodetect()  36 > [[ 0 == \1 ]]
++ 1406736035.900200161 /scripts/functions/selector : __rvm_ruby_string_autodetect()  36 > [[ -n '' ]]
++ 1406736035.904668169 /scripts/functions/selector : __rvm_ruby_string_autodetect()  36 > [[ -n '' ]]
++ 1406736035.907963724 /scripts/functions/selector : __rvm_ruby_string_autodetect()  60 > [[ -n '' ]]
++ 1406736035.911176302 /scripts/functions/selector : __rvm_ruby_string_autodetect()  64 > [[ -n '' ]]
++ 1406736035.914338951 /scripts/functions/selector : __rvm_ruby_string_autodetect()  68 > [[ -n '' ]]
++ 1406736035.917391218 /scripts/functions/selector : __rvm_ruby_string_autodetect()  73 > ((  0 == 1  ))
++ 1406736035.920290891 /scripts/functions/selector : __rvm_ruby_string_autodetect()  84 > [[ -n '' ]]
+++ 1406736035.924647168 /scripts/functions/selector : __rvm_ruby_string_autodetect()  -271 > __rvm_db ruby_2.1.0_patch_level
+++ 1406736035.928100876 /scripts/functions/db : __rvm_db()  1 > typeset value key variable
+++ 1406736035.931089172 /scripts/functions/db : __rvm_db()  2 > key=ruby_2.1.0_patch_level
+++ 1406736035.934427562 /scripts/functions/db : __rvm_db()  3 > key=ruby_2.1.0_patch_level
+++ 1406736035.937541743 /scripts/functions/db : __rvm_db()  4 > variable=
+++ 1406736035.940667799 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++ 1406736035.944292020 /scripts/functions/db : __rvm_db()  1 > __rvm_db_ /usr/local/rvm/user/db ruby_2.1.0_patch_level
++++ 1406736035.947693464 /scripts/functions/db : __rvm_db_()  1 > typeset __db __key __value
++++ 1406736035.950677305 /scripts/functions/db : __rvm_db_()  2 > __db=/usr/local/rvm/user/db
++++ 1406736035.953728243 /scripts/functions/db : __rvm_db_()  3 > __key=ruby_2.1.0_patch_level
++++ 1406736035.957028581 /scripts/functions/db : __rvm_db_()  4 > shift 2
++++ 1406736035.960131992 /scripts/functions/db : __rvm_db_()  5 > __value=
++++ 1406736035.963472466 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++ 1406736035.966882420 /scripts/functions/db : __rvm_db_()  11 > __rvm_db_get /usr/local/rvm/user/db ruby_2.1.0_patch_level
++++ 1406736035.970549049 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++ 1406736036.080735583 /scripts/functions/db : __rvm_db_get()  2 > __rvm_grep '^ruby_2.1.0_patch_level=' /usr/local/rvm/user/db
++++ 1406736036.080736465 /scripts/functions/db : __rvm_db_get()  2 > __rvm_sed -e 's#^ruby_2.1.0_patch_level=##' -e '/^$/d'
++++ 1406736036.085516004 /scripts/functions/support : __rvm_sed()  0 > sed -e 's#^ruby_2.1.0_patch_level=##' -e '/^$/d'
++++ 1406736036.086900973 /scripts/functions/support : __rvm_grep()  0 > GREP_OPTIONS=
++++ 1406736036.091069064 /scripts/functions/support : __rvm_grep()  0 > grep '^ruby_2.1.0_patch_level=' /usr/local/rvm/user/db
++++ 1406736036.095916884 /scripts/functions/support : __rvm_grep()  0 > return 1
+++ 1406736036.101683225 /scripts/functions/db : __rvm_db()  7 > value=
+++ 1406736036.105017716 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++ 1406736036.107945552 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++ 1406736036.111522605 /scripts/functions/db : __rvm_db()  4 > __rvm_db_ /usr/local/rvm/config/db ruby_2.1.0_patch_level
++++ 1406736036.114999318 /scripts/functions/db : __rvm_db_()  1 > typeset __db __key __value
++++ 1406736036.118303417 /scripts/functions/db : __rvm_db_()  2 > __db=/usr/local/rvm/config/db
++++ 1406736036.121587532 /scripts/functions/db : __rvm_db_()  3 > __key=ruby_2.1.0_patch_level
++++ 1406736036.124965633 /scripts/functions/db : __rvm_db_()  4 > shift 2
++++ 1406736036.128213894 /scripts/functions/db : __rvm_db_()  5 > __value=
++++ 1406736036.131777647 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++ 1406736036.135284949 /scripts/functions/db : __rvm_db_()  11 > __rvm_db_get /usr/local/rvm/config/db ruby_2.1.0_patch_level
++++ 1406736036.139060274 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++ 1406736036.143636146 /scripts/functions/db : __rvm_db_get()  2 > __rvm_grep '^ruby_2.1.0_patch_level=' /usr/local/rvm/config/db
++++ 1406736036.144089942 /scripts/functions/db : __rvm_db_get()  2 > __rvm_sed -e 's#^ruby_2.1.0_patch_level=##' -e '/^$/d'
++++ 1406736036.148158672 /scripts/functions/support : __rvm_sed()  0 > sed -e 's#^ruby_2.1.0_patch_level=##' -e '/^$/d'
++++ 1406736036.148686874 /scripts/functions/support : __rvm_grep()  0 > GREP_OPTIONS=
++++ 1406736036.152916414 /scripts/functions/support : __rvm_grep()  0 > grep '^ruby_2.1.0_patch_level=' /usr/local/rvm/config/db
+++ 1406736036.161741724 /scripts/functions/db : __rvm_db()  10 > value=
+++ 1406736036.164999656 /scripts/functions/db : __rvm_db()  12 > [[ -n '' ]]
+++ 1406736036.169065957 /scripts/functions/db : __rvm_db()  12 > return 1
++ 1406736036.174046792 /scripts/functions/selector : __rvm_ruby_string_autodetect()  87 > rvm_ruby_patch_level=
++ 1406736036.177546650 /scripts/functions/selector : __rvm_ruby_string_autodetect()  88 > [[ -n '' ]]
++ 1406736036.180739877 /scripts/functions/selector : __rvm_ruby_string_autodetect()  92 > true
++ 1406736036.183972536 /scripts/functions/selector : __rvm_ruby_string()  -11 > rvm_ruby_string=ruby-2.1.0
++ 1406736036.187023711 /scripts/functions/selector : __rvm_ruby_string()  -7 > detected_rvm_ruby_name=
++ 1406736036.190493014 /scripts/functions/selector : __rvm_ruby_string()  -5 > rvm_ruby_name=
++ 1406736036.193971192 /scripts/functions/selector : __rvm_ruby_string()  -4 > true
++ 1406736036.197361789 /scripts/functions/selector : __rvm_select()  -266 > __rvm_select_after_parse
++ 1406736036.200681095 /scripts/functions/selector : __rvm_select_after_parse()  1 > __rvm_select_interpreter_variables
++ 1406736036.203752181 /scripts/functions/selector : __rvm_select_interpreter_variables()  1 > rvm_archive_extension=tar.gz
++ 1406736036.207045059 /scripts/functions/selector : __rvm_select_interpreter_variables()  3 > [[ -z ruby ]]
++ 1406736036.210705049 /scripts/functions/selector : __rvm_select_interpreter_variables()  7 > rvm_ruby_interpreter=ruby
++ 1406736036.213974593 /scripts/functions/selector : __rvm_select_interpreter_variables()  10 > is_a_function __rvm_select_interpreter_ruby
++ 1406736036.217659364 /scripts/functions/support : is_a_function()  1 > typeset -f __rvm_select_interpreter_ruby
++ 1406736036.221358945 /scripts/functions/selector : __rvm_select_interpreter_variables()  40 > __rvm_select_interpreter_ruby
++ 1406736036.225174000 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  2 > [[ '' == \p\0 ]]
++ 1406736036.228400326 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  9 > rvm_ruby_package_name=ruby-2.1.0
++ 1406736036.232059512 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  10 > rvm_ruby_package_file=ruby-2.1.0
++ 1406736036.235515775 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  12 > [[ -z 2.1.0 ]]
+++ 1406736036.239567556 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  -378 > __rvm_db ruby_repo_url
+++ 1406736036.244932996 /scripts/functions/db : __rvm_db()  1 > typeset value key variable
+++ 1406736036.248817818 /scripts/functions/db : __rvm_db()  2 > key=ruby_repo_url
+++ 1406736036.253056156 /scripts/functions/db : __rvm_db()  3 > key=ruby_repo_url
+++ 1406736036.256769672 /scripts/functions/db : __rvm_db()  4 > variable=
+++ 1406736036.259890726 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++ 1406736036.265161656 /scripts/functions/db : __rvm_db()  1 > __rvm_db_ /usr/local/rvm/user/db ruby_repo_url
++++ 1406736036.269154480 /scripts/functions/db : __rvm_db_()  1 > typeset __db __key __value
++++ 1406736036.273125667 /scripts/functions/db : __rvm_db_()  2 > __db=/usr/local/rvm/user/db
++++ 1406736036.276453627 /scripts/functions/db : __rvm_db_()  3 > __key=ruby_repo_url
++++ 1406736036.279708234 /scripts/functions/db : __rvm_db_()  4 > shift 2
++++ 1406736036.282873199 /scripts/functions/db : __rvm_db_()  5 > __value=
++++ 1406736036.285941276 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++ 1406736036.288885583 /scripts/functions/db : __rvm_db_()  11 > __rvm_db_get /usr/local/rvm/user/db ruby_repo_url
++++ 1406736036.291956349 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++ 1406736036.295850832 /scripts/functions/db : __rvm_db_get()  2 > __rvm_grep '^ruby_repo_url=' /usr/local/rvm/user/db
++++ 1406736036.296470606 /scripts/functions/db : __rvm_db_get()  2 > __rvm_sed -e 's#^ruby_repo_url=##' -e '/^$/d'
++++ 1406736036.301182385 /scripts/functions/support : __rvm_sed()  0 > sed -e 's#^ruby_repo_url=##' -e '/^$/d'
++++ 1406736036.301236558 /scripts/functions/support : __rvm_grep()  0 > GREP_OPTIONS=
++++ 1406736036.307635265 /scripts/functions/support : __rvm_grep()  0 > grep '^ruby_repo_url=' /usr/local/rvm/user/db
++++ 1406736036.313036173 /scripts/functions/support : __rvm_grep()  0 > return 1
+++ 1406736036.318397854 /scripts/functions/db : __rvm_db()  7 > value=
+++ 1406736036.322318893 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++ 1406736036.325371493 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++ 1406736036.329346840 /scripts/functions/db : __rvm_db()  4 > __rvm_db_ /usr/local/rvm/config/db ruby_repo_url
++++ 1406736036.334066848 /scripts/functions/db : __rvm_db_()  1 > typeset __db __key __value
++++ 1406736036.337804772 /scripts/functions/db : __rvm_db_()  2 > __db=/usr/local/rvm/config/db
++++ 1406736036.341588864 /scripts/functions/db : __rvm_db_()  3 > __key=ruby_repo_url
++++ 1406736036.344501365 /scripts/functions/db : __rvm_db_()  4 > shift 2
++++ 1406736036.347635093 /scripts/functions/db : __rvm_db_()  5 > __value=
++++ 1406736036.350823277 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++ 1406736036.353878408 /scripts/functions/db : __rvm_db_()  11 > __rvm_db_get /usr/local/rvm/config/db ruby_repo_url
++++ 1406736036.357375071 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++ 1406736036.361480217 /scripts/functions/db : __rvm_db_get()  2 > __rvm_grep '^ruby_repo_url=' /usr/local/rvm/config/db
++++ 1406736036.362343861 /scripts/functions/db : __rvm_db_get()  2 > __rvm_sed -e 's#^ruby_repo_url=##' -e '/^$/d'
++++ 1406736036.366074465 /scripts/functions/support : __rvm_sed()  0 > sed -e 's#^ruby_repo_url=##' -e '/^$/d'
++++ 1406736036.366021612 /scripts/functions/support : __rvm_grep()  0 > GREP_OPTIONS=
++++ 1406736036.370102551 /scripts/functions/support : __rvm_grep()  0 > grep '^ruby_repo_url=' /usr/local/rvm/config/db
+++ 1406736036.377426453 /scripts/functions/db : __rvm_db()  10 > value=git://github.com/ruby/ruby.git
+++ 1406736036.380257870 /scripts/functions/db : __rvm_db()  12 > [[ -n git://github.com/ruby/ruby.git ]]
+++ 1406736036.383138573 /scripts/functions/db : __rvm_db()  13 > [[ -n '' ]]
+++ 1406736036.385933685 /scripts/functions/db : __rvm_db()  15 > echo git://github.com/ruby/ruby.git
+++ 1406736036.389320742 /scripts/functions/db : __rvm_db()  17 > true
++ 1406736036.393441573 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  17 > rvm_ruby_repo_url=git://github.com/ruby/ruby.git
++ 1406736036.397170735 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  19 > ((  0 == 0  ))
++ 1406736036.400658315 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  21 > __rvm_version_compare 2.1.0 -lt 1.8.5
++ 1406736036.404098059 /scripts/functions/utility : __rvm_version_compare()  1 > typeset first
+++ 1406736036.409034889 /scripts/functions/utility : __rvm_version_compare()  -186 > printf %b '2.1.0\n1.8.5\n'
+++ 1406736036.409682705 /scripts/functions/utility : __rvm_version_compare()  -186 > __rvm_version_sort
+++ 1406736036.409881578 /scripts/functions/utility : __rvm_version_compare()  -186 > head -n1
+++ 1406736036.414353938 /scripts/functions/utility : __rvm_version_sort()  1 > LC_ALL=C
+++ 1406736036.417812771 /scripts/functions/utility : __rvm_version_sort()  1 > sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n -k 5,5n
++ 1406736036.426703054 /scripts/functions/utility : __rvm_version_compare()  2 > first=1.8.5
++ 1406736036.429839034 /scripts/functions/utility : __rvm_version_compare()  192 > case "$2" in
++ 1406736036.433001014 /scripts/functions/utility : __rvm_version_compare()  18 > [[ 1.8.5 == \2\.\1\.\0 ]]
++ 1406736036.436276126 /scripts/functions/utility : __rvm_version_compare()  18 > return 1
++ 1406736036.439484250 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  230 > rvm_archive_extension=tar.bz2
++ 1406736036.583216213 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  236 > true
++ 1406736036.588663727 /scripts/functions/selector : __rvm_select_after_parse()  -88 > __rvm_select_version_variables
++ 1406736036.592407952 /scripts/functions/selector : __rvm_select_version_variables()  59 > case "$rvm_ruby_version" in
++ 1406736036.595565578 /scripts/functions/selector : __rvm_select_version_variables()  3 > rvm_ruby_release_version=2
++ 1406736036.599092538 /scripts/functions/selector : __rvm_select_version_variables()  4 > rvm_ruby_major_version=2.1
++ 1406736036.602699576 /scripts/functions/selector : __rvm_select_version_variables()  5 > rvm_ruby_major_version=1
++ 1406736036.605907276 /scripts/functions/selector : __rvm_select_version_variables()  6 > rvm_ruby_minor_version=0
++ 1406736036.609283361 /scripts/functions/selector : __rvm_select_after_parse()  43 > __rvm_select_default_variables
++ 1406736036.612378275 /scripts/functions/selector : __rvm_select_default_variables()  1 > [[ ruby != ext ]]
++ 1406736036.615184085 /scripts/functions/selector : __rvm_select_default_variables()  2 > rvm_ruby_package_name=ruby-2.1.0
++ 1406736036.618509463 /scripts/functions/selector : __rvm_select_default_variables()  5 > rvm_ruby_home=/usr/local/rvm/rubies/ruby-2.1.0
++ 1406736036.623189063 /scripts/functions/selector : __rvm_select_default_variables()  6 > rvm_ruby_binary=/usr/local/rvm/rubies/ruby-2.1.0/bin/ruby
++ 1406736036.627025562 /scripts/functions/selector : __rvm_select_default_variables()  7 > rvm_ruby_irbrc=/usr/local/rvm/rubies/ruby-2.1.0/.irbrc
++ 1406736036.630781673 /scripts/functions/selector : __rvm_select_after_parse()  29 > [[ system == \r\u\b\y ]]
++ 1406736036.633994395 /scripts/functions/selector : __rvm_select_after_parse()  29 > __rvm_gemset_select
++ 1406736036.637462032 /scripts/functions/selector_gemsets : __rvm_gemset_select()  1 > __rvm_gemset_select_only
++ 1406736036.641209018 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  1 > rvm_ruby_gem_home=/usr/local/rvm/gems/ruby-2.1.0
++ 1406736036.644728483 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  3 > : rvm_ignore_gemsets_flag:0:
++ 1406736036.650867859 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  4 > ((  rvm_ignore_gemsets_flag  ))
++ 1406736036.654459314 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  10 > rvm_ruby_global_gems_path=/usr/local/rvm/gems/ruby-2.1.0@global
++ 1406736036.657663617 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  12 > __rvm_gemset_handle_default
++ 1406736036.661506816 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  1 > rvm_gemset_name=@@
++ 1406736036.665578207 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  2 > rvm_gemset_name=@@
++ 1406736036.669542662 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  4 > rvm_gemset_name=
++ 1406736036.675581509 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  62 > [[ -z '' ]]
++ 1406736036.679046863 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  65 > [[ '' == \g\l\o\b\a\l ]]
++ 1406736036.683383882 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  69 > rvm_ruby_gem_path=/usr/local/rvm/gems/ruby-2.1.0:/usr/local/rvm/gems/ruby-2.1.0@global
++ 1406736036.687012945 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  73 > [[ -n '' ]]
++ 1406736036.690281206 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  77 > rvm_env_string=ruby-2.1.0
++ 1406736036.693599525 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  79 > true
++ 1406736036.697226648 /scripts/functions/selector_gemsets : __rvm_gemset_select()  137 > __rvm_gemset_select_validation
++ 1406736036.701532197 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  3 > [[ ! -d /usr/local/rvm/gems/ruby-2.1.0 ]]
++ 1406736036.706442959 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  6 > ((  0 == 0 && 0 == 0 && 0 == 0  ))
++ 1406736036.709841911 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  8 > rvm_expected_gemset_name=
++ 1406736036.713902069 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  9 > rvm_gemset_name=
++ 1406736036.717844877 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  10 > __rvm_gemset_select_only
++ 1406736036.722086050 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  1 > rvm_ruby_gem_home=/usr/local/rvm/gems/ruby-2.1.0
++ 1406736036.725472903 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  3 > : rvm_ignore_gemsets_flag:0:
++ 1406736036.731489752 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  4 > ((  rvm_ignore_gemsets_flag  ))
++ 1406736036.734744932 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  10 > rvm_ruby_global_gems_path=/usr/local/rvm/gems/ruby-2.1.0@global
++ 1406736036.738708590 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  12 > __rvm_gemset_handle_default
++ 1406736036.742531258 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  1 > rvm_gemset_name=@@
++ 1406736036.746988327 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  2 > rvm_gemset_name=@@
++ 1406736036.751964405 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  4 > rvm_gemset_name=
++ 1406736036.756240996 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  62 > [[ -z '' ]]
++ 1406736036.760245627 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  65 > [[ '' == \g\l\o\b\a\l ]]
++ 1406736036.764441329 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  69 > rvm_ruby_gem_path=/usr/local/rvm/gems/ruby-2.1.0:/usr/local/rvm/gems/ruby-2.1.0@global
++ 1406736036.768390456 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  73 > [[ -n '' ]]
++ 1406736036.771460711 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  77 > rvm_env_string=ruby-2.1.0
++ 1406736036.775184800 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  79 > true
++ 1406736036.780549660 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  94 > return 2
++ 1406736036.783897286 /scripts/functions/selector_gemsets : __rvm_gemset_select()  138 > return 2
++ 1406736036.787307119 /scripts/functions/selector : __rvm_select_after_parse()  101 > return 0
++ 1406736036.790679772 /scripts/functions/cli : __rvm_cli_rubies_select()  280 > [[ -n ruby-2.1.0 ]]
++ 1406736036.794303423 /scripts/functions/cli : __rvm_cli_rubies_select()  281 > __search_list+='^ruby-2.1.0$|'
++ 1406736036.798339134 /scripts/functions/cli : __rvm_cli_rubies_select()  287 > __search_list='^ruby-2.1.0$'
++ 1406736036.801909747 /scripts/functions/cli : __rvm_cli_install_ruby()  264 > __rvm_cli_rubies_not_installed
++ 1406736036.805224702 /scripts/functions/cli : __rvm_cli_rubies_not_installed()  2 > ((  0 == 0  ))
+++ 1406736036.810214033 /scripts/functions/cli : __rvm_cli_rubies_not_installed()  -289 > __rvm_list_strings
+++ 1406736036.811310129 /scripts/functions/cli : __rvm_cli_rubies_not_installed()  -289 > __rvm_grep -E '^ruby-2.1.0$'
+++ 1406736036.816051690 /scripts/functions/list : __rvm_list_strings()  1 > __rvm_awk -F/ '{print $NF}'
+++ 1406736036.817791066 /scripts/functions/support : __rvm_grep()  0 > GREP_OPTIONS=
+++ 1406736036.818142205 /scripts/functions/list : __rvm_list_strings()  1 > __rvm_find /usr/local/rvm/rubies -mindepth 1 -maxdepth 1 -type d
+++ 1406736036.821146267 /scripts/functions/support : __rvm_awk()  0 > awk -F/ '{print $NF}'
+++ 1406736036.823254062 /scripts/functions/support : __rvm_grep()  0 > grep -E '^ruby-2.1.0$'
+++ 1406736036.823336863 /scripts/functions/support : __rvm_find()  0 > find /usr/local/rvm/rubies -mindepth 1 -maxdepth 1 -type d
+find: `/usr/local/rvm/rubies': No such file or directory
+++ 1406736036.829719535 /scripts/functions/support : __rvm_find()  0 > return 1
+++ 1406736036.836128183 /scripts/functions/support : __rvm_grep()  0 > return 1
++ 1406736036.841040226 /scripts/functions/cli : __rvm_cli_rubies_not_installed()  5 > __installed=
++ 1406736036.844236321 /scripts/functions/cli : __rvm_cli_rubies_not_installed()  15 > true
++ 1406736036.847983868 /scripts/functions/cli : __rvm_cli_install_ruby()  -26 > __rvm_run_wrapper manage install 2.1.0
++ 1406736036.852463283 /scripts/functions/utility : __rvm_run_wrapper()  97 > file=manage
++ 1406736036.855889331 /scripts/functions/utility : __rvm_run_wrapper()  98 > action=install
++ 1406736036.859148283 /scripts/functions/utility : __rvm_run_wrapper()  99 > shift 2
++ 1406736036.862303815 /scripts/functions/utility : __rvm_run_wrapper()  100 > rubies_string=2.1.0
++ 1406736036.865807044 /scripts/functions/utility : __rvm_run_wrapper()  101 > export -a args
++ 1406736036.869382681 /scripts/functions/utility : __rvm_run_wrapper()  102 > args=($@)
++ 1406736036.874171151 /scripts/functions/utility : __rvm_run_wrapper()  103 > source /usr/local/rvm/scripts/manage
++++ 1406736036.878278189 /scripts/manage : source()  4 > command uname -s
++++ 1406736036.881748007 /scripts/manage : source()  4 > uname -s
+++ 1406736036.887063117 /scripts/manage : source()  4 > sys=Linux
+++ 1406736036.890576813 /scripts/manage : source()  -300 > [[ Linux == AIX ]]
+++ 1406736036.894693528 /scripts/manage : source()  7 > name_opt=-iname
+++ 1406736036.898176564 /scripts/manage : source()  9 > original_ruby_version=2.1.0
+++ 1406736036.901825488 /scripts/manage : source()  10 > original_ruby_string=ruby-2.1.0
+++ 1406736036.905313347 /scripts/manage : source()  12 > source /usr/local/rvm/scripts/patches
+++ 1406736036.910369152 /scripts/manage : source()  13 > source /usr/local/rvm/scripts/functions/build
++++ 1406736036.914394381 /scripts/functions/build : source()  3 > source /usr/local/rvm/scripts/functions/autolibs
++++ 1406736036.918762273 /scripts/functions/build : source()  4 > source /usr/local/rvm/scripts/functions/build_config
++++ 1406736036.924925170 /scripts/functions/build : source()  5 > source /usr/local/rvm/scripts/functions/build_config_system
++++ 1406736036.929892873 /scripts/functions/build : source()  6 > source /usr/local/rvm/scripts/functions/build_requirements
+++++ 1406736036.933634934 /scripts/functions/build_requirements : source()  3 > source /usr/local/rvm/scripts/functions/build_requirements_helpers
++++ 1406736036.940240561 /scripts/functions/build : source()  -297 > [[ Darwin == \L\i\n\u\x ]]
+++ 1406736036.945756336 /scripts/manage : source()  14 > source /usr/local/rvm/scripts/functions/pkg
+++ 1406736036.952053973 /scripts/manage : source()  15 > source /usr/local/rvm/scripts/functions/irbrc
+++ 1406736036.956072967 /scripts/manage : source()  16 > source /usr/local/rvm/scripts/functions/db
+++ 1406736037.083632596 /scripts/manage : source()  17 > source /usr/local/rvm/scripts/functions/rubygems
+++ 1406736037.088735334 /scripts/manage : source()  18 > source /usr/local/rvm/scripts/functions/manage/base
++++ 1406736037.091590659 /scripts/functions/manage/base : source()  3 > source /usr/local/rvm/scripts/functions/manage/base_fetch
++++ 1406736037.095845772 /scripts/functions/manage/base : source()  4 > source /usr/local/rvm/scripts/functions/manage/base_install
++++ 1406736037.101692738 /scripts/functions/manage/base : source()  5 > source /usr/local/rvm/scripts/functions/manage/base_install_patches
++++ 1406736037.106206323 /scripts/functions/manage/base : source()  6 > source /usr/local/rvm/scripts/functions/manage/base_remove
+++++ 1406736037.110439550 /scripts/functions/manage/base_remove : source()  3 > source /usr/local/rvm/scripts/functions/alias
+++ 1406736037.115268271 /scripts/manage : source()  -285 > [[ -n '' ]]
+++ 1406736037.118436523 /scripts/manage : source()  23 > unset RUBYLIB RUBYOPT
+++ 1406736037.121779446 /scripts/manage : source()  25 > binaries=()
+++ 1406736037.125214419 /scripts/manage : source()  27 > __rvm_manage_rubies
+++ 1406736037.128867087 /scripts/functions/manage/base : __rvm_manage_rubies()  38 > typeset manage_result bin_line current_ruby_string
+++ 1406736037.133269567 /scripts/functions/manage/base : __rvm_manage_rubies()  39 > typeset -a rubies
+++ 1406736037.136389140 /scripts/functions/manage/base : __rvm_manage_rubies()  40 > rubies=()
+++ 1406736037.139374011 /scripts/functions/manage/base : __rvm_manage_rubies()  42 > rvm_gemset_name=
+++ 1406736037.142996206 /scripts/functions/manage/base : __rvm_manage_rubies()  43 > rvm_ruby_selected_flag=0
+++ 1406736037.146365903 /scripts/functions/manage/base : __rvm_manage_rubies()  44 > rvm_ruby_gem_home=/usr/local/rvm/gems/ruby-2.1.0
+++ 1406736037.149704457 /scripts/functions/manage/base : __rvm_manage_rubies()  45 > rvm_ruby_string=ruby-2.1.0
+++ 1406736037.153318658 /scripts/functions/manage/base : __rvm_manage_rubies()  49 > __rvm_string_match 2.1.0 'old:*'
+++ 1406736037.156325528 /scripts/functions/support : __rvm_string_match()  32 > typeset _string
+++ 1406736037.159198965 /scripts/functions/support : __rvm_string_match()  33 > _string=2.1.0
+++ 1406736037.161853808 /scripts/functions/support : __rvm_string_match()  34 > shift
+++ 1406736037.164532764 /scripts/functions/support : __rvm_string_match()  4 > ((  1  ))
+++ 1406736037.167885737 /scripts/functions/support : __rvm_string_match()  37 > case "${_string}" in
+++ 1406736037.171215224 /scripts/functions/support : __rvm_string_match()  40 > shift
+++ 1406736037.175075192 /scripts/functions/support : __rvm_string_match()  4 > ((  0  ))
+++ 1406736037.178492020 /scripts/functions/support : __rvm_string_match()  42 > return 1
+++ 1406736037.181886691 /scripts/functions/manage/base : __rvm_manage_rubies()  43 > [[ -n 2.1.0 ]]
+++ 1406736037.185898172 /scripts/functions/manage/base : __rvm_manage_rubies()  43 > [[ 2.1.0 != \a\l\l ]]
+++ 1406736037.189284434 /scripts/functions/manage/base : __rvm_manage_rubies()  46 > [[ 2.1.0 == *,* ]]
+++ 1406736037.192682100 /scripts/functions/manage/base : __rvm_manage_rubies()  46 > [[ -z ruby-2.1.0 ]]
+++ 1406736037.195881574 /scripts/functions/manage/base : __rvm_manage_rubies()  81 > rubies=("${rvm_ruby_string}")
+++ 1406736037.199706637 /scripts/functions/manage/base : __rvm_manage_rubies()  107 > for rvm_ruby_string in '"${rubies[@]}"'
+++ 1406736037.203647831 /scripts/functions/manage/base : __rvm_manage_rubies()  109 > rvm_debug 'ruby-2.1.0 - install'
+++ 1406736037.208128632 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
+++ 1406736037.211566090 /scripts/functions/logging : rvm_debug()  144 > return 0
+++ 1406736037.214798994 /scripts/functions/manage/base : __rvm_manage_rubies()  110 > current_ruby_string=ruby-2.1.0
+++ 1406736037.218613456 /scripts/functions/manage/base : __rvm_manage_rubies()  114 > rvm_hook=before_install
+++ 1406736037.223365397 /scripts/functions/manage/base : __rvm_manage_rubies()  115 > source /usr/local/rvm/scripts/hook
++++ 1406736037.226376881 /scripts/hook : source()  4 > typeset old_rvm_verbose_flag old_rvm_debug_flag
++++ 1406736037.231897811 /scripts/hook : source()  5 > old_rvm_verbose_flag=0
++++ 1406736037.235740953 /scripts/hook : source()  6 > old_rvm_debug_flag=0
++++ 1406736037.238805456 /scripts/hook : source()  9 > typeset rvm_verbose_flag rvm_debug_flag hooks
++++ 1406736037.243072803 /scripts/hook : source()  11 > true rvm_verbose_flag:0 rvm_debug_flag:0 rvm_hook:before_install
++++ 1406736037.246936261 /scripts/hook : source()  -128 > [[ -n before_install ]]
++++ 1406736037.250587280 /scripts/hook : source()  17 > hooks=("$rvm_hooks_path")
++++ 1406736037.254243000 /scripts/hook : source()  -125 > [[ /home/ubuntu/workspace/.rvm/hooks == \/\u\s\r\/\l\o\c\a\l\/\r\v\m\/\h\o\o\k\s ]]
++++ 1406736037.257935601 /scripts/hook : source()  19 > hooks+=("$PWD/.rvm/hooks")
++++ 1406736037.261464130 /scripts/hook : source()  23 > _hooks_list=($(
+    __rvm_find -L "${hooks[@]}" -iname "$rvm_hook*" -type f 2>/dev/null
+  ))
+++++ 1406736037.265929361 /scripts/hook : source()  24 > __rvm_find -L /usr/local/rvm/hooks /home/ubuntu/workspace/.rvm/hooks -iname 'before_install*' -type f
++++ 1406736037.290809794 /scripts/hook : source()  35 > unset rvm_hook hooks _hooks_list hook
+++ 1406736037.296304464 /scripts/functions/manage/base : __rvm_manage_rubies()  116 > __rvm_install_ruby
+++ 1406736037.301381729 /scripts/functions/manage/base_install : __rvm_install_ruby()  335 > true 0 0
+++ 1406736037.306048505 /scripts/functions/manage/base_install : __rvm_install_ruby()  336 > typeset binary __rvm_ruby_name ruby_install_type
+++ 1406736037.311073212 /scripts/functions/manage/base_install : __rvm_install_ruby()  5 > ((  rvm_ruby_selected_flag == 0  ))
+++ 1406736037.315663266 /scripts/functions/manage/base_install : __rvm_install_ruby()  341 > __rvm_ruby_name=
+++ 1406736037.320224314 /scripts/functions/manage/base_install : __rvm_install_ruby()  342 > __rvm_select
+++ 1406736037.324390460 /scripts/functions/selector : __rvm_select()  88 > true
+++ 1406736037.327711275 /scripts/functions/selector : __rvm_select()  90 > __rvm_select_set_variable_defaults
+++ 1406736037.331692429 /scripts/functions/selector : __rvm_select_set_variable_defaults()  10 > export -a rvm_configure_flags rvm_patch_names rvm_ree_options rvm_make_flags
+++ 1406736037.335815357 /scripts/functions/selector : __rvm_select_set_variable_defaults()  11 > export GEM_HOME GEM_PATH MY_RUBY_HOME RUBY_VERSION IRBRC
+++ 1406736037.340830168 /scripts/functions/selector : __rvm_select_set_variable_defaults()  12 > export rvm_env_string rvm_action rvm_alias_expanded rvm_archive_extension rvm_bin_flag rvm_bin_path rvm_debug_flag rvm_default_flag rvm_delete_flag rvm_docs_type rvm_dump_environment_flag rvm_error_message rvm_expanding_aliases rvm_file_name rvm_gemdir_flag rvm_gemset_name rvm_gemstone_package_file rvm_gemstone_url rvm_head_flag rvm_hook rvm_install_on_use_flag rvm_llvm_flag rvm_loaded_flag rvm_niceness rvm_nightly_flag rvm_only_path_flag rvm_parse_break rvm_patch_original_pwd rvm_pretty_print_flag rvm_proxy rvm_quiet_flag rvm_reload_flag rvm_remove_flag rvm_ruby_alias rvm_ruby_args rvm_ruby_binary rvm_ruby_bits rvm_ruby_configure rvm_ruby_file rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_global_gems_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_major_version rvm_ruby_make rvm_ruby_make_install rvm_ruby_minor_version rvm_ruby_mode rvm_ruby_name rvm_ruby_package_file rvm_ruby_package_name rvm_ruby_patch rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_sha rvm_ruby_string rvm_ruby_strings rvm_ruby_tag rvm_ruby_url rvm_ruby_user_tag rvm_ruby_version rvm_script_name rvm_sdk rvm_silent_flag rvm_sticky_flag rvm_system_flag rvm_token rvm_trace_flag rvm_use_flag rvm_user_flag rvm_verbose_flag rvm_wrapper_name
+++ 1406736037.347281893 /scripts/functions/selector : __rvm_select()  91 > __rvm_select_detect_ruby_string ''
+++ 1406736037.350593363 /scripts/functions/selector : __rvm_select_detect_ruby_string()  17 > rvm_ruby_string=ruby-2.1.0
+++ 1406736037.353723253 /scripts/functions/selector : __rvm_select_detect_ruby_string()  3 > [[ -z ruby-2.1.0 ]]
+++ 1406736037.356921465 /scripts/functions/selector : __rvm_select()  92 > __rvm_ruby_string
+++ 1406736037.360815919 /scripts/functions/selector : __rvm_ruby_string()  294 > true 0 0
+++ 1406736037.364282270 /scripts/functions/selector : __rvm_ruby_string()  295 > rvm_expanding_aliases=
+++ 1406736037.368278181 /scripts/functions/selector : __rvm_ruby_string()  297 > true 2.1.0 '' ruby 2.1.0 '' '' '' @ ruby-2.1.0 0 0
+++ 1406736037.371758788 /scripts/functions/selector : __rvm_ruby_string()  18 > [[ ruby-2.1.0 == *\@* ]]
+++ 1406736037.375494802 /scripts/functions/selector : __rvm_ruby_string()  25 > ((  rvm_expanding_aliases == 0  ))
+++ 1406736037.378760312 /scripts/functions/selector : __rvm_ruby_string()  26 > [[ -n ruby-2.1.0 ]]
+++ 1406736037.381670048 /scripts/functions/selector : __rvm_ruby_string()  26 > [[ ruby-2.1.0 != \s\y\s\t\e\m ]]
+++ 1406736037.384452722 /scripts/functions/selector : __rvm_ruby_string()  29 > [[ -f /usr/local/rvm/config/alias ]]
+++ 1406736037.387273192 /scripts/functions/selector : __rvm_ruby_string()  29 > [[ -s /usr/local/rvm/config/alias ]]
++++ 1406736037.391029161 /scripts/functions/selector : __rvm_ruby_string()  315 > __rvm_db_ /usr/local/rvm/config/alias ruby-2.1.0
++++ 1406736037.394266610 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++ 1406736037.397257928 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/alias
++++ 1406736037.400846772 /scripts/functions/db : __rvm_db_()  59 > __key=ruby-2.1.0
++++ 1406736037.404414452 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++ 1406736037.408117602 /scripts/functions/db : __rvm_db_()  61 > __value=
++++ 1406736037.411575585 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++ 1406736037.414902104 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/alias ruby-2.1.0
++++ 1406736037.418101800 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/alias ]]
++++ 1406736037.421883851 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^ruby-2.1.0=' /usr/local/rvm/config/alias
++++ 1406736037.422746222 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^ruby-2.1.0=##' -e '/^$/d'
++++ 1406736037.427116662 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^ruby-2.1.0=##' -e '/^$/d'
++++ 1406736037.427146050 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++ 1406736037.431387132 /scripts/functions/support : __rvm_grep()  233 > grep '^ruby-2.1.0=' /usr/local/rvm/config/alias
++++ 1406736037.436488680 /scripts/functions/support : __rvm_grep()  233 > return 1
+++ 1406736037.441536690 /scripts/functions/selector : __rvm_ruby_string()  315 > expanded_alias_name=
+++ 1406736037.444810035 /scripts/functions/selector : __rvm_ruby_string()  31 > [[ -n '' ]]
+++ 1406736037.448351107 /scripts/functions/selector : __rvm_ruby_string()  35 > [[ ruby-2.1.0 == default ]]
+++ 1406736037.451466268 /scripts/functions/selector : __rvm_ruby_string()  41 > [[ ruby-2.1.0 == *\@* ]]
+++ 1406736037.454590420 /scripts/functions/selector : __rvm_ruby_string()  48 > [[ -n '' ]]
+++ 1406736037.457614525 /scripts/functions/selector : __rvm_ruby_string()  339 > __rvm_ruby_string_parse
+++ 1406736037.460804292 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  270 > typeset __check_latest
+++ 1406736037.463672624 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  271 > __check_latest=0
+++ 1406736037.580540234 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  274 > __rvm_ruby_string_parse_
+++ 1406736037.585705731 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  46 > typeset ruby_string gemset_name expanded_alias_name repo_url branch_name ruby_name
+++ 1406736037.592988256 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  49 > ruby_string=ruby-2.1.0
+++ 1406736037.598623625 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  50 > gemset_name=
+++ 1406736037.603486564 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  51 > repo_url=git://github.com/ruby/ruby.git
+++ 1406736037.609922412 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  52 > branch_name=
+++ 1406736037.615097328 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  53 > ruby_name=
+++ 1406736037.625002974 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  55 > __rvm_unset_ruby_variables
+++ 1406736037.629162535 /scripts/functions/env : __rvm_unset_ruby_variables()  16 > unset rvm_env_string rvm_ruby_string rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_log_path rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_tag rvm_ruby_version rvm_head_flag rvm_ruby_package_file rvm_ruby_configure rvm_ruby_name rvm_ruby_url rvm_ruby_global_gems_path rvm_ruby_args rvm_ruby_name rvm_llvm_flag
+++ 1406736037.634316076 /scripts/functions/env : __rvm_unset_ruby_variables()  17 > __rvm_load_rvmrc
+++ 1406736037.639302756 /scripts/functions/init : __rvm_load_rvmrc()  5 > typeset _file
+++ 1406736037.643888717 /scripts/functions/init : __rvm_load_rvmrc()  6 > typeset -a rvm_rvmrc_files
+++ 1406736037.648845425 /scripts/functions/init : __rvm_load_rvmrc()  3 > ((  0 == 1  ))
+++ 1406736037.653512478 /scripts/functions/init : __rvm_load_rvmrc()  8 > [[ -n 0022 ]]
+++ 1406736037.658634805 /scripts/functions/init : __rvm_load_rvmrc()  14 > rvm_rvmrc_files=("/etc/rvmrc" "$HOME/.rvmrc")
+++ 1406736037.664923053 /scripts/functions/init : __rvm_load_rvmrc()  11 > [[ -n /usr/local ]]
+++ 1406736037.670407410 /scripts/functions/init : __rvm_load_rvmrc()  11 > [[ /home/ubuntu/.rvmrc -ef /usr/local/.rvmrc ]]
+++ 1406736037.675306523 /scripts/functions/init : __rvm_load_rvmrc()  16 > rvm_rvmrc_files+=("${rvm_prefix}/.rvmrc")
+++ 1406736037.680076828 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
+++ 1406736037.683696027 /scripts/functions/init : __rvm_load_rvmrc()  16 > [[ -s /etc/rvmrc ]]
+++ 1406736037.687444691 /scripts/functions/init : __rvm_load_rvmrc()  22 > __rvm_grep '^\s*rvm .*$' /etc/rvmrc
+++ 1406736037.704689722 /scripts/functions/init : __rvm_load_rvmrc()  31 > source /etc/rvmrc
++++ 1406736037.708486934 /etc/rvmrc : source()  1 > umask u=rwx,g=rwx,o=rx
+++ 1406736037.712772558 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
+++ 1406736037.717805164 /scripts/functions/init : __rvm_load_rvmrc()  -213 > [[ -s /home/ubuntu/.rvmrc ]]
+++ 1406736037.721888811 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
+++ 1406736037.725801454 /scripts/functions/init : __rvm_load_rvmrc()  -213 > [[ -s /usr/local/.rvmrc ]]
+++ 1406736037.729846794 /scripts/functions/init : __rvm_load_rvmrc()  35 > return 0
+++ 1406736037.733187241 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  57 > rvm_ruby_repo_url=git://github.com/ruby/ruby.git
+++ 1406736037.736551619 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  58 > rvm_ruby_repo_branch=
+++ 1406736037.739821127 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  59 > rvm_ruby_name=
+++ 1406736037.744448378 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -171 > [[ -z ruby-2.1.0 ]]
+++ 1406736037.748609959 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -171 > [[ ruby-2.1.0 == \c\u\r\r\e\n\t ]]
+++ 1406736037.752008700 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  75 > strings=()
+++ 1406736037.755000525 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  76 > __rvm_custom_separated_array strings - ruby-2.1.0
+++ 1406736037.758617099 /scripts/functions/utility : __rvm_custom_separated_array()  224 > typeset IFS
+++ 1406736037.762744995 /scripts/functions/utility : __rvm_custom_separated_array()  225 > IFS=-
+++ 1406736037.766003636 /scripts/functions/utility : __rvm_custom_separated_array()  3 > [[ -n '' ]]
+++ 1406736037.769817639 /scripts/functions/utility : __rvm_custom_separated_array()  228 > eval 'strings+=( $3 )'
++++ 1406736037.773531836 /scripts/functions/utility : __rvm_custom_separated_array()  228 > strings+=($3)
+++ 1406736037.777481109 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  77 > rvm_ruby_string=ruby-2.1.0
+++ 1406736037.781426914 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  79 > for string in '${strings[@]}'
+++ 1406736037.784109463 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  81 > case "$string" in
+++ 1406736037.787335990 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  211 > rvm_ruby_interpreter=ruby
+++ 1406736037.790821624 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  79 > for string in '${strings[@]}'
+++ 1406736037.794737480 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  81 > case "$string" in
+++ 1406736037.798394199 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  137 > rvm_ruby_version=2.1.0
+++ 1406736037.801841692 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  138 > rvm_ruby_revision=
+++ 1406736037.804842633 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  139 > rvm_ruby_tag=
+++ 1406736037.808740581 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  3 > [[ -z ruby ]]
+++ 1406736037.812503263 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  233 > true
+++ 1406736037.815731616 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  54 > ((  0 == 1  ))
+++ 1406736037.819054393 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  292 > __rvm_ruby_string_parse_
+++ 1406736037.822357069 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  46 > typeset ruby_string gemset_name expanded_alias_name repo_url branch_name ruby_name
+++ 1406736037.826284858 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  49 > ruby_string=ruby-2.1.0
+++ 1406736037.830256512 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  50 > gemset_name=
+++ 1406736037.833933246 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  51 > repo_url=git://github.com/ruby/ruby.git
+++ 1406736037.838063920 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  52 > branch_name=
+++ 1406736037.841732446 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  53 > ruby_name=
+++ 1406736037.845194461 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  55 > __rvm_unset_ruby_variables
+++ 1406736037.848584449 /scripts/functions/env : __rvm_unset_ruby_variables()  16 > unset rvm_env_string rvm_ruby_string rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_gem_path rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_log_path rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_selected_flag rvm_ruby_tag rvm_ruby_version rvm_head_flag rvm_ruby_package_file rvm_ruby_configure rvm_ruby_name rvm_ruby_url rvm_ruby_global_gems_path rvm_ruby_args rvm_ruby_name rvm_llvm_flag
+++ 1406736037.851894760 /scripts/functions/env : __rvm_unset_ruby_variables()  17 > __rvm_load_rvmrc
+++ 1406736037.854929741 /scripts/functions/init : __rvm_load_rvmrc()  5 > typeset _file
+++ 1406736037.857716586 /scripts/functions/init : __rvm_load_rvmrc()  6 > typeset -a rvm_rvmrc_files
+++ 1406736037.860659276 /scripts/functions/init : __rvm_load_rvmrc()  3 > ((  0 == 1  ))
+++ 1406736037.864258868 /scripts/functions/init : __rvm_load_rvmrc()  8 > [[ -n 0022 ]]
+++ 1406736037.867444436 /scripts/functions/init : __rvm_load_rvmrc()  14 > rvm_rvmrc_files=("/etc/rvmrc" "$HOME/.rvmrc")
+++ 1406736037.870374496 /scripts/functions/init : __rvm_load_rvmrc()  11 > [[ -n /usr/local ]]
+++ 1406736037.873451069 /scripts/functions/init : __rvm_load_rvmrc()  11 > [[ /home/ubuntu/.rvmrc -ef /usr/local/.rvmrc ]]
+++ 1406736037.876865854 /scripts/functions/init : __rvm_load_rvmrc()  16 > rvm_rvmrc_files+=("${rvm_prefix}/.rvmrc")
+++ 1406736037.881051649 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
+++ 1406736037.884830075 /scripts/functions/init : __rvm_load_rvmrc()  16 > [[ -s /etc/rvmrc ]]
+++ 1406736037.888225488 /scripts/functions/init : __rvm_load_rvmrc()  22 > __rvm_grep '^\s*rvm .*$' /etc/rvmrc
+++ 1406736037.903958753 /scripts/functions/init : __rvm_load_rvmrc()  31 > source /etc/rvmrc
++++ 1406736037.907599689 /etc/rvmrc : source()  1 > umask u=rwx,g=rwx,o=rx
+++ 1406736037.910979381 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
+++ 1406736037.914446855 /scripts/functions/init : __rvm_load_rvmrc()  -213 > [[ -s /home/ubuntu/.rvmrc ]]
+++ 1406736037.918086700 /scripts/functions/init : __rvm_load_rvmrc()  18 > for _file in '"${rvm_rvmrc_files[@]}"'
+++ 1406736037.921475859 /scripts/functions/init : __rvm_load_rvmrc()  -213 > [[ -s /usr/local/.rvmrc ]]
+++ 1406736037.925047026 /scripts/functions/init : __rvm_load_rvmrc()  35 > return 0
+++ 1406736037.928333133 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  57 > rvm_ruby_repo_url=git://github.com/ruby/ruby.git
+++ 1406736037.931382958 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  58 > rvm_ruby_repo_branch=
+++ 1406736037.934431422 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  59 > rvm_ruby_name=
+++ 1406736037.937593300 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -171 > [[ -z ruby-2.1.0 ]]
+++ 1406736037.940928574 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  -171 > [[ ruby-2.1.0 == \c\u\r\r\e\n\t ]]
+++ 1406736037.943910533 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  75 > strings=()
+++ 1406736037.946765577 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  76 > __rvm_custom_separated_array strings - ruby-2.1.0
+++ 1406736037.949759640 /scripts/functions/utility : __rvm_custom_separated_array()  224 > typeset IFS
+++ 1406736037.952776255 /scripts/functions/utility : __rvm_custom_separated_array()  225 > IFS=-
+++ 1406736037.955742188 /scripts/functions/utility : __rvm_custom_separated_array()  3 > [[ -n '' ]]
+++ 1406736037.958808130 /scripts/functions/utility : __rvm_custom_separated_array()  228 > eval 'strings+=( $3 )'
++++ 1406736037.966204878 /scripts/functions/utility : __rvm_custom_separated_array()  228 > strings+=($3)
+++ 1406736037.970796042 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  77 > rvm_ruby_string=ruby-2.1.0
+++ 1406736037.975335635 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  79 > for string in '${strings[@]}'
+++ 1406736037.980128941 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  81 > case "$string" in
+++ 1406736037.983931198 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  211 > rvm_ruby_interpreter=ruby
+++ 1406736037.987374635 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  79 > for string in '${strings[@]}'
+++ 1406736037.990996052 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  81 > case "$string" in
+++ 1406736038.082618170 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  137 > rvm_ruby_version=2.1.0
+++ 1406736038.086721390 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  138 > rvm_ruby_revision=
+++ 1406736038.090694127 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  139 > rvm_ruby_tag=
+++ 1406736038.094578991 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  3 > [[ -z ruby ]]
+++ 1406736038.097692703 /scripts/functions/selector_parse : __rvm_ruby_string_parse_()  233 > true
+++ 1406736038.101018476 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  72 > ((  __check_latest  ))
+++ 1406736038.105471446 /scripts/functions/selector_parse : __rvm_ruby_string_parse()  80 > [[ -z ruby ]]
+++ 1406736038.109697822 /scripts/functions/selector : __rvm_ruby_string()  342 > __rvm_ruby_string_installed
+++ 1406736038.112988015 /scripts/functions/selector : __rvm_ruby_string_installed()  3 > [[ -n ruby ]]
+++ 1406736038.116310313 /scripts/functions/selector : __rvm_ruby_string_installed()  3 > [[ -n ruby-2.1.0 ]]
+++ 1406736038.119422960 /scripts/functions/selector : __rvm_ruby_string_installed()  3 > [[ -d /usr/local/rvm/rubies/ruby-2.1.0 ]]
+++ 1406736038.122741778 /scripts/functions/selector : __rvm_ruby_string()  343 > __rvm_ruby_string_remotely_available
+++ 1406736038.125809391 /scripts/functions/selector : __rvm_ruby_string_remotely_available()  1 > ((  0 == 1  ))
+++ 1406736038.128500782 /scripts/functions/selector : __rvm_ruby_string()  347 > __rvm_ruby_string_autodetect
+++ 1406736038.131338032 /scripts/functions/selector : __rvm_ruby_string_autodetect()  5 > [[ -z 2.1.0 ]]
+++ 1406736038.134128332 /scripts/functions/selector : __rvm_ruby_string_autodetect()  24 > ((  0  ))
+++ 1406736038.136891878 /scripts/functions/selector : __rvm_ruby_string_autodetect()  389 > rvm_ruby_string=ruby-2.1.0
+++ 1406736038.139931003 /scripts/functions/selector : __rvm_ruby_string_autodetect()  32 > [[ ruby == \e\x\t ]]
+++ 1406736038.143236233 /scripts/functions/selector : __rvm_ruby_string_autodetect()  36 > [[ 0 == \1 ]]
+++ 1406736038.146316061 /scripts/functions/selector : __rvm_ruby_string_autodetect()  36 > [[ -n '' ]]
+++ 1406736038.149508637 /scripts/functions/selector : __rvm_ruby_string_autodetect()  36 > [[ -n '' ]]
+++ 1406736038.152360574 /scripts/functions/selector : __rvm_ruby_string_autodetect()  60 > [[ -n '' ]]
+++ 1406736038.155266818 /scripts/functions/selector : __rvm_ruby_string_autodetect()  64 > [[ -n '' ]]
+++ 1406736038.158286276 /scripts/functions/selector : __rvm_ruby_string_autodetect()  68 > [[ -n '' ]]
+++ 1406736038.161426764 /scripts/functions/selector : __rvm_ruby_string_autodetect()  73 > ((  0 == 1  ))
+++ 1406736038.165243463 /scripts/functions/selector : __rvm_ruby_string_autodetect()  84 > [[ -n '' ]]
++++ 1406736038.169648662 /scripts/functions/selector : __rvm_ruby_string_autodetect()  447 > __rvm_db ruby_2.1.0_patch_level
++++ 1406736038.173925048 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
++++ 1406736038.177597384 /scripts/functions/db : __rvm_db()  8 > key=ruby_2.1.0_patch_level
++++ 1406736038.181020159 /scripts/functions/db : __rvm_db()  9 > key=ruby_2.1.0_patch_level
++++ 1406736038.184592830 /scripts/functions/db : __rvm_db()  10 > variable=
++++ 1406736038.187965296 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
+++++ 1406736038.191718101 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db ruby_2.1.0_patch_level
+++++ 1406736038.195190079 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
+++++ 1406736038.198437471 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
+++++ 1406736038.201517408 /scripts/functions/db : __rvm_db_()  59 > __key=ruby_2.1.0_patch_level
+++++ 1406736038.204572876 /scripts/functions/db : __rvm_db_()  60 > shift 2
+++++ 1406736038.207907561 /scripts/functions/db : __rvm_db_()  61 > __value=
+++++ 1406736038.211311324 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
+++++ 1406736038.214685300 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db ruby_2.1.0_patch_level
+++++ 1406736038.218991469 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
+++++ 1406736038.224639938 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^ruby_2.1.0_patch_level=' /usr/local/rvm/user/db
+++++ 1406736038.224834893 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^ruby_2.1.0_patch_level=##' -e '/^$/d'
+++++ 1406736038.229522032 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^ruby_2.1.0_patch_level=##' -e '/^$/d'
+++++ 1406736038.230016746 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
+++++ 1406736038.235004855 /scripts/functions/support : __rvm_grep()  233 > grep '^ruby_2.1.0_patch_level=' /usr/local/rvm/user/db
+++++ 1406736038.241532891 /scripts/functions/support : __rvm_grep()  233 > return 1
++++ 1406736038.247485969 /scripts/functions/db : __rvm_db()  13 > value=
++++ 1406736038.250633663 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
++++ 1406736038.253584678 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
+++++ 1406736038.257733197 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db ruby_2.1.0_patch_level
+++++ 1406736038.262358395 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
+++++ 1406736038.266697620 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
+++++ 1406736038.270246874 /scripts/functions/db : __rvm_db_()  59 > __key=ruby_2.1.0_patch_level
+++++ 1406736038.273904659 /scripts/functions/db : __rvm_db_()  60 > shift 2
+++++ 1406736038.277768839 /scripts/functions/db : __rvm_db_()  61 > __value=
+++++ 1406736038.281453218 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
+++++ 1406736038.284711990 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db ruby_2.1.0_patch_level
+++++ 1406736038.288191159 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
+++++ 1406736038.292372021 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^ruby_2.1.0_patch_level=##' -e '/^$/d'
+++++ 1406736038.293529262 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^ruby_2.1.0_patch_level=' /usr/local/rvm/config/db
+++++ 1406736038.297022064 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^ruby_2.1.0_patch_level=##' -e '/^$/d'
+++++ 1406736038.298247752 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
+++++ 1406736038.302066949 /scripts/functions/support : __rvm_grep()  233 > grep '^ruby_2.1.0_patch_level=' /usr/local/rvm/config/db
++++ 1406736038.310409960 /scripts/functions/db : __rvm_db()  16 > value=
++++ 1406736038.313882319 /scripts/functions/db : __rvm_db()  12 > [[ -n '' ]]
++++ 1406736038.317097425 /scripts/functions/db : __rvm_db()  18 > return 1
+++ 1406736038.321410462 /scripts/functions/selector : __rvm_ruby_string_autodetect()  446 > rvm_ruby_patch_level=
+++ 1406736038.324638755 /scripts/functions/selector : __rvm_ruby_string_autodetect()  88 > [[ -n '' ]]
+++ 1406736038.327609745 /scripts/functions/selector : __rvm_ruby_string_autodetect()  451 > true
+++ 1406736038.330820452 /scripts/functions/selector : __rvm_ruby_string()  348 > rvm_ruby_string=ruby-2.1.0
+++ 1406736038.334172443 /scripts/functions/selector : __rvm_ruby_string()  352 > detected_rvm_ruby_name=
+++ 1406736038.337829722 /scripts/functions/selector : __rvm_ruby_string()  354 > rvm_ruby_name=
+++ 1406736038.340868779 /scripts/functions/selector : __rvm_ruby_string()  355 > true
+++ 1406736038.343991882 /scripts/functions/selector : __rvm_select()  93 > __rvm_select_after_parse
+++ 1406736038.347090890 /scripts/functions/selector : __rvm_select_after_parse()  99 > __rvm_select_interpreter_variables
+++ 1406736038.350114873 /scripts/functions/selector : __rvm_select_interpreter_variables()  33 > rvm_archive_extension=tar.gz
+++ 1406736038.353307323 /scripts/functions/selector : __rvm_select_interpreter_variables()  3 > [[ -z ruby ]]
+++ 1406736038.356240652 /scripts/functions/selector : __rvm_select_interpreter_variables()  39 > rvm_ruby_interpreter=ruby
+++ 1406736038.359139181 /scripts/functions/selector : __rvm_select_interpreter_variables()  42 > is_a_function __rvm_select_interpreter_ruby
+++ 1406736038.362698997 /scripts/functions/support : is_a_function()  5 > typeset -f __rvm_select_interpreter_ruby
+++ 1406736038.365855301 /scripts/functions/selector : __rvm_select_interpreter_variables()  44 > __rvm_select_interpreter_ruby
+++ 1406736038.368860467 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  2 > [[ '' == \p\0 ]]
+++ 1406736038.371885557 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  404 > rvm_ruby_package_name=ruby-2.1.0
+++ 1406736038.375211918 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  405 > rvm_ruby_package_file=ruby-2.1.0
+++ 1406736038.378604795 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  12 > [[ -z 2.1.0 ]]
+++ 1406736038.382153630 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  412 > rvm_ruby_repo_url=git://github.com/ruby/ruby.git
+++ 1406736038.385314752 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  19 > ((  0 == 0  ))
+++ 1406736038.388920624 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  416 > __rvm_version_compare 2.1.0 -lt 1.8.5
+++ 1406736038.392572123 /scripts/functions/utility : __rvm_version_compare()  189 > typeset first
++++ 1406736038.397777596 /scripts/functions/utility : __rvm_version_compare()  190 > __rvm_version_sort
++++ 1406736038.398677010 /scripts/functions/utility : __rvm_version_compare()  190 > printf %b '2.1.0\n1.8.5\n'
++++ 1406736038.401487510 /scripts/functions/utility : __rvm_version_compare()  190 > head -n1
++++ 1406736038.402217109 /scripts/functions/utility : __rvm_version_sort()  184 > LC_ALL=C
++++ 1406736038.406271512 /scripts/functions/utility : __rvm_version_sort()  184 > sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n -k 5,5n
+++ 1406736038.415619615 /scripts/functions/utility : __rvm_version_compare()  190 > first=1.8.5
+++ 1406736038.418708502 /scripts/functions/utility : __rvm_version_compare()  192 > case "$2" in
+++ 1406736038.421876744 /scripts/functions/utility : __rvm_version_compare()  18 > [[ 1.8.5 == \2\.\1\.\0 ]]
+++ 1406736038.424893495 /scripts/functions/utility : __rvm_version_compare()  206 > return 1
+++ 1406736038.428062651 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  418 > rvm_archive_extension=tar.bz2
+++ 1406736038.431971318 /scripts/functions/selector_interpreters : __rvm_select_interpreter_ruby()  424 > true
+++ 1406736038.435073783 /scripts/functions/selector : __rvm_select_after_parse()  100 > __rvm_select_version_variables
+++ 1406736038.438035065 /scripts/functions/selector : __rvm_select_version_variables()  59 > case "$rvm_ruby_version" in
+++ 1406736038.441976818 /scripts/functions/selector : __rvm_select_version_variables()  61 > rvm_ruby_release_version=2
+++ 1406736038.445053734 /scripts/functions/selector : __rvm_select_version_variables()  62 > rvm_ruby_major_version=2.1
+++ 1406736038.583067222 /scripts/functions/selector : __rvm_select_version_variables()  63 > rvm_ruby_major_version=1
+++ 1406736038.586101452 /scripts/functions/selector : __rvm_select_version_variables()  64 > rvm_ruby_minor_version=0
+++ 1406736038.588944427 /scripts/functions/selector : __rvm_select_after_parse()  101 > __rvm_select_default_variables
+++ 1406736038.591869599 /scripts/functions/selector : __rvm_select_default_variables()  1 > [[ ruby != ext ]]
+++ 1406736038.594687688 /scripts/functions/selector : __rvm_select_default_variables()  77 > rvm_ruby_package_name=ruby-2.1.0
+++ 1406736038.597734071 /scripts/functions/selector : __rvm_select_default_variables()  80 > rvm_ruby_home=/usr/local/rvm/rubies/ruby-2.1.0
+++ 1406736038.600770917 /scripts/functions/selector : __rvm_select_default_variables()  81 > rvm_ruby_binary=/usr/local/rvm/rubies/ruby-2.1.0/bin/ruby
+++ 1406736038.603442072 /scripts/functions/selector : __rvm_select_default_variables()  82 > rvm_ruby_irbrc=/usr/local/rvm/rubies/ruby-2.1.0/.irbrc
+++ 1406736038.606243010 /scripts/functions/selector : __rvm_select_after_parse()  29 > [[ system == \r\u\b\y ]]
+++ 1406736038.608966577 /scripts/functions/selector : __rvm_select_after_parse()  104 > __rvm_gemset_select
+++ 1406736038.612220154 /scripts/functions/selector_gemsets : __rvm_gemset_select()  140 > __rvm_gemset_select_only
+++ 1406736038.615537825 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  54 > rvm_ruby_gem_home=/usr/local/rvm/gems/ruby-2.1.0
+++ 1406736038.620072853 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  56 > : rvm_ignore_gemsets_flag:0:
+++ 1406736038.624769059 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  4 > ((  rvm_ignore_gemsets_flag  ))
+++ 1406736038.628486108 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  63 > rvm_ruby_global_gems_path=/usr/local/rvm/gems/ruby-2.1.0@global
+++ 1406736038.632335268 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  65 > __rvm_gemset_handle_default
+++ 1406736038.636071501 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  5 > rvm_gemset_name=@@
+++ 1406736038.639723387 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  6 > rvm_gemset_name=@@
+++ 1406736038.643160311 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  8 > rvm_gemset_name=
+++ 1406736038.646503311 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  62 > [[ -z '' ]]
+++ 1406736038.650144733 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  65 > [[ '' == \g\l\o\b\a\l ]]
+++ 1406736038.653705937 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  73 > rvm_ruby_gem_path=/usr/local/rvm/gems/ruby-2.1.0:/usr/local/rvm/gems/ruby-2.1.0@global
+++ 1406736038.657672553 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  73 > [[ -n '' ]]
+++ 1406736038.661276538 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  81 > rvm_env_string=ruby-2.1.0
+++ 1406736038.665249847 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  83 > true
+++ 1406736038.669098267 /scripts/functions/selector_gemsets : __rvm_gemset_select()  141 > __rvm_gemset_select_validation
+++ 1406736038.672539407 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  3 > [[ ! -d /usr/local/rvm/gems/ruby-2.1.0 ]]
+++ 1406736038.675578777 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  6 > ((  0 == 0 && 0 == 0 && 0 == 0  ))
+++ 1406736038.679274396 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  95 > rvm_expected_gemset_name=
+++ 1406736038.683066482 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  96 > rvm_gemset_name=
+++ 1406736038.686816288 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  97 > __rvm_gemset_select_only
+++ 1406736038.691143537 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  54 > rvm_ruby_gem_home=/usr/local/rvm/gems/ruby-2.1.0
+++ 1406736038.695187489 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  56 > : rvm_ignore_gemsets_flag:0:
+++ 1406736038.698978479 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  4 > ((  rvm_ignore_gemsets_flag  ))
+++ 1406736038.703266514 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  63 > rvm_ruby_global_gems_path=/usr/local/rvm/gems/ruby-2.1.0@global
+++ 1406736038.707158077 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  65 > __rvm_gemset_handle_default
+++ 1406736038.711358504 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  5 > rvm_gemset_name=@@
+++ 1406736038.715695438 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  6 > rvm_gemset_name=@@
+++ 1406736038.719828633 /scripts/functions/selector_gemsets : __rvm_gemset_handle_default()  8 > rvm_gemset_name=
+++ 1406736038.723646302 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  62 > [[ -z '' ]]
+++ 1406736038.727020447 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  65 > [[ '' == \g\l\o\b\a\l ]]
+++ 1406736038.729978359 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  73 > rvm_ruby_gem_path=/usr/local/rvm/gems/ruby-2.1.0:/usr/local/rvm/gems/ruby-2.1.0@global
+++ 1406736038.733522710 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  73 > [[ -n '' ]]
+++ 1406736038.736765014 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  81 > rvm_env_string=ruby-2.1.0
+++ 1406736038.740093609 /scripts/functions/selector_gemsets : __rvm_gemset_select_only()  83 > true
+++ 1406736038.744033715 /scripts/functions/selector_gemsets : __rvm_gemset_select_validation()  98 > return 2
+++ 1406736038.747382481 /scripts/functions/selector_gemsets : __rvm_gemset_select()  142 > return 2
+++ 1406736038.750782516 /scripts/functions/selector : __rvm_select_after_parse()  105 > return 0
+++ 1406736038.754963212 /scripts/functions/manage/base_install : __rvm_install_ruby()  340 > [[ -n '' ]]
+++ 1406736038.758955176 /scripts/functions/manage/base_install : __rvm_install_ruby()  359 > [[ -n '' ]]
+++ 1406736038.762400014 /scripts/functions/manage/base_install : __rvm_install_ruby()  369 > __rvm_select_late
+++ 1406736038.765943683 /scripts/functions/selector_late : __rvm_select_late()  6 > is_a_function __rvm_select_late_ruby
+++ 1406736038.769342432 /scripts/functions/support : is_a_function()  5 > typeset -f __rvm_select_late_ruby
+++ 1406736038.772721800 /scripts/functions/support : is_a_function()  5 > return 1
+++ 1406736038.776746849 /scripts/functions/manage/base_install : __rvm_install_ruby()  366 > ((  0 == 0  ))
+++ 1406736038.780175538 /scripts/functions/manage/base_install : __rvm_install_ruby()  371 > __rvm_remove_src_and_ruby
+++ 1406736038.783528866 /scripts/functions/manage/base_remove : __rvm_remove_src_and_ruby()  69 > typeset _dir
+++ 1406736038.786969261 /scripts/functions/manage/base_remove : __rvm_remove_src_and_ruby()  70 > for _dir in '"${rvm_src_path}"' '"${rvm_rubies_path}"'
+++ 1406736038.791763583 /scripts/functions/manage/base_remove : __rvm_remove_src_and_ruby()  5 > [[ -d /usr/local/rvm/src/ruby-2.1.0 ]]
+++ 1406736038.795625282 /scripts/functions/manage/base_remove : __rvm_remove_src_and_ruby()  81 > rvm_debug 'ruby-2.1.0 - #already removed src/ruby-2.1.0'
+++ 1406736038.800027099 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
+++ 1406736038.803926659 /scripts/functions/logging : rvm_debug()  144 > return 0
+++ 1406736038.806985162 /scripts/functions/manage/base_remove : __rvm_remove_src_and_ruby()  70 > for _dir in '"${rvm_src_path}"' '"${rvm_rubies_path}"'
+++ 1406736038.810517199 /scripts/functions/manage/base_remove : __rvm_remove_src_and_ruby()  -70 > [[ -d /usr/local/rvm/rubies/ruby-2.1.0 ]]
+++ 1406736038.813641104 /scripts/functions/manage/base_remove : __rvm_remove_src_and_ruby()  81 > rvm_debug 'ruby-2.1.0 - #already removed rubies/ruby-2.1.0'
+++ 1406736038.816409622 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
+++ 1406736038.819143912 /scripts/functions/logging : rvm_debug()  144 > return 0
+++ 1406736038.823203230 /scripts/functions/manage/base_remove : __rvm_remove_src_and_ruby()  -58 > [[ -e /usr/local/rvm/bin/ruby-2.1.0 ]]
+++ 1406736038.826393224 /scripts/functions/manage/base_install : __rvm_install_ruby()  374 > __rvm_install_ruby_try_remote
+++ 1406736038.830213870 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  213 > : rvm_disable_binary_flag:0: rvm_remote_flag:0:
+++ 1406736038.835875473 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  3 > ((  rvm_remote_flag > 0  ))
+++ 1406736038.840145656 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  4 > ((  rvm_head_flag == 0 && rvm_disable_binary_flag == 0  ))
+++ 1406736038.844237864 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  218 > rvm_log 'Searching for binary rubies, this might take some time.'
+++ 1406736038.847343321 /scripts/functions/logging : rvm_log()  161 > rvm_pretty_print stdout
+++ 1406736038.850859308 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
+++ 1406736038.854757413 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
+++ 1406736038.858238404 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
+++ 1406736038.861079721 /scripts/functions/logging : rvm_pretty_print()  10 > [[ -t 1 ]]
+++ 1406736038.864641048 /scripts/functions/logging : rvm_pretty_print()  82 > return 1
+++ 1406736038.867553521 /scripts/functions/logging : rvm_log()  163 > printf %b 'Searching for binary rubies, this might take some time.\n'
+Searching for binary rubies, this might take some time.
+++ 1406736038.870710377 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  219 > typeset __rvm_ruby_url __rvm_ruby_verify_download_flag __ruby_identifier
+++ 1406736038.873961018 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  220 > __ruby_identifier=ruby-2.1.0
++++ 1406736038.877855090 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  221 > __rvm_remote_server_path ruby-2.1.0
++++ 1406736038.881323613 /scripts/functions/utility_system : __rvm_remote_server_path()  309 > typeset _iterator
++++ 1406736038.884336810 /scripts/functions/utility_system : __rvm_remote_server_path()  310 > _iterator=
++++ 1406736038.887927972 /scripts/functions/utility_system : __rvm_remote_server_path()  311 > __rvm_remote_server_path_single 0 1 '' ruby-2.1.0
++++ 1406736038.891520452 /scripts/functions/utility_system : __rvm_remote_server_path_single()  285 > typeset __remote_file
++++ 1406736038.895320959 /scripts/functions/utility_system : __rvm_remote_server_path_single()  286 > __rvm_calculate_remote_file 0 1 '' ruby-2.1.0
+++++ 1406736038.899306554 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > __rvm_db rvm_remote_server_url
+++++ 1406736038.902647282 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736038.905702977 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_url
+++++ 1406736038.909168594 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_url
+++++ 1406736038.912121683 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736038.915065577 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736038.918769924 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_url
++++++ 1406736038.922435953 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736038.925835949 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736038.929668459 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url
++++++ 1406736038.933302762 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736038.936834709 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736038.940153733 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736038.943148209 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_url
++++++ 1406736038.945956418 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736038.949933139 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url=##' -e '/^$/d'
++++++ 1406736038.950188817 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url=' /usr/local/rvm/user/db
++++++ 1406736038.953786714 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url=##' -e '/^$/d'
++++++ 1406736038.954231186 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736038.957895821 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url=' /usr/local/rvm/user/db
++++++ 1406736039.079135289 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736039.085617995 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736039.088551396 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736039.091676096 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736039.095617367 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_url
++++++ 1406736039.099356545 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736039.102957222 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736039.106100560 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url
++++++ 1406736039.109391376 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736039.113071670 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736039.116504719 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736039.119478342 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_url
++++++ 1406736039.123092602 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736039.127850115 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url=' /usr/local/rvm/config/db
++++++ 1406736039.128431830 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url=##' -e '/^$/d'
++++++ 1406736039.132896843 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736039.132877922 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url=##' -e '/^$/d'
++++++ 1406736039.137669227 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url=' /usr/local/rvm/config/db
+++++ 1406736039.145047847 /scripts/functions/db : __rvm_db()  16 > value=https://rvm.io/binaries
+++++ 1406736039.148261410 /scripts/functions/db : __rvm_db()  12 > [[ -n https://rvm.io/binaries ]]
+++++ 1406736039.151613465 /scripts/functions/db : __rvm_db()  13 > [[ -n '' ]]
+++++ 1406736039.155044831 /scripts/functions/db : __rvm_db()  21 > echo https://rvm.io/binaries
+++++ 1406736039.158012691 /scripts/functions/db : __rvm_db()  23 > true
++++ 1406736039.162024949 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > rvm_remote_server_url=https://rvm.io/binaries
++++ 1406736039.166767168 /scripts/functions/utility_system : __rvm_calculate_remote_file()  2 > [[ -n https://rvm.io/binaries ]]
++++ 1406736039.170972626 /scripts/functions/utility_system : __rvm_calculate_remote_file()  277 > __rvm_system_path '' ''
+++++ 1406736039.174998398 /scripts/functions/utility_system : __rvm_system_path()  212 > __rvm_db rvm_remote_server_path
+++++ 1406736039.179032513 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736039.182040039 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_path
+++++ 1406736039.184970231 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_path
+++++ 1406736039.187963962 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736039.190966569 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736039.194714104 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_path
++++++ 1406736039.197993153 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736039.200900978 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736039.203842178 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path
++++++ 1406736039.207611807 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736039.211396113 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736039.215281940 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736039.219188814 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_path
++++++ 1406736039.222965365 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736039.228232428 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path=' /usr/local/rvm/user/db
++++++ 1406736039.228244733 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path=##' -e '/^$/d'
++++++ 1406736039.232115029 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path=##' -e '/^$/d'
++++++ 1406736039.235302300 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736039.238789696 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path=' /usr/local/rvm/user/db
++++++ 1406736039.243597349 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736039.249274801 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736039.252723375 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736039.256685442 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736039.260712766 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_path
++++++ 1406736039.265549220 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736039.270125929 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736039.274728005 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path
++++++ 1406736039.278538835 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736039.281380345 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736039.285191249 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736039.288434555 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_path
++++++ 1406736039.292784983 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736039.298227846 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path=' /usr/local/rvm/config/db
++++++ 1406736039.298518810 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path=##' -e '/^$/d'
++++++ 1406736039.302901945 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path=##' -e '/^$/d'
++++++ 1406736039.303669984 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736039.308363304 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path=' /usr/local/rvm/config/db
++++++ 1406736039.313111526 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736039.318703959 /scripts/functions/db : __rvm_db()  16 > value=
+++++ 1406736039.321662508 /scripts/functions/db : __rvm_db()  12 > [[ -n '' ]]
+++++ 1406736039.325328231 /scripts/functions/db : __rvm_db()  18 > return 1
++++ 1406736039.329460941 /scripts/functions/utility_system : __rvm_system_path()  212 > rvm_remote_server_path=
++++ 1406736039.332683195 /scripts/functions/utility_system : __rvm_system_path()  2 > [[ -n '' ]]
++++ 1406736039.336221393 /scripts/functions/utility_system : __rvm_system_path()  214 > rvm_remote_server_path=ubuntu/14.04/x86_64
++++ 1406736039.339708916 /scripts/functions/utility_system : __rvm_system_path()  4 > [[ '' == \- ]]
++++ 1406736039.343997484 /scripts/functions/utility_system : __rvm_calculate_remote_file()  278 > __rvm_ruby_package_file ruby-2.1.0
++++ 1406736039.347469245 /scripts/functions/utility_system : __rvm_ruby_package_file()  239 > case "$1" in
+++++ 1406736039.351302824 /scripts/functions/utility_system : __rvm_ruby_package_file()  262 > __rvm_remote_extension ruby-2.1.0 -
+++++ 1406736039.354403822 /scripts/functions/utility_system : __rvm_remote_extension()  222 > case "$1" in
+++++ 1406736039.357257885 /scripts/functions/utility_system : __rvm_remote_extension()  230 > rvm_remote_extension=tar.bz2
+++++ 1406736039.360285375 /scripts/functions/utility_system : __rvm_remote_extension()  12 > [[ - != \- ]]
+++++ 1406736039.363848552 /scripts/functions/utility_system : __rvm_remote_extension()  233 > printf %b tar.bz2
++++ 1406736039.368362964 /scripts/functions/utility_system : __rvm_ruby_package_file()  262 > rvm_ruby_package_file=/ruby-2.1.0.tar.bz2
++++ 1406736039.372136192 /scripts/functions/utility_system : __rvm_calculate_remote_file()  279 > __remote_file=https://rvm.io/binaries/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2
++++ 1406736039.375464410 /scripts/functions/utility_system : __rvm_remote_server_path_single()  50 > [[ -z https://rvm.io/binaries/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 ]]
++++ 1406736039.379037261 /scripts/functions/utility_system : __rvm_remote_server_path_single()  293 > file_exists_at_url https://rvm.io/binaries/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2
++++ 1406736039.383612960 /scripts/functions/utility : file_exists_at_url()  19 > [[ -n https://rvm.io/binaries/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 ]]
++++ 1406736039.387169904 /scripts/functions/utility : file_exists_at_url()  326 > unset curl
++++ 1406736039.390956158 /scripts/functions/utility : file_exists_at_url()  327 > file_exists_at_url_command https://rvm.io/binaries/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 --insecure
++++ 1406736039.396302816 /scripts/functions/utility : file_exists_at_url_command()  308 > __rvm_grep -E 'HTTP/[0-9\.]+ 200 OK'
++++ 1406736039.396303689 /scripts/functions/utility : file_exists_at_url_command()  306 > __rvm_curl --silent --insecure --location --list-only --max-time 5 --head https://rvm.io/binaries/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 --insecure
++++ 1406736040.068530884 /scripts/functions/utility : file_exists_at_url_command()  310 > typeset __ret=1
++++ 1406736040.072838051 /scripts/functions/utility : file_exists_at_url_command()  311 > case ${__ret} in
++++ 1406736040.076253460 /scripts/functions/utility : file_exists_at_url_command()  317 > return 1
++++ 1406736040.080289914 /scripts/functions/utility : file_exists_at_url()  329 > typeset __ret=1
++++ 1406736040.083842886 /scripts/functions/utility : file_exists_at_url()  330 > case ${__ret} in
++++ 1406736040.087238008 /scripts/functions/utility : file_exists_at_url()  339 > return 1
++++ 1406736040.091021089 /scripts/functions/utility_system : __rvm_remote_server_path_single()  -8 > [[ -f /usr/local/rvm/archives/ruby-2.1.0.tar.bz2 ]]
++++ 1406736040.094401739 /scripts/functions/utility_system : __rvm_remote_server_path_single()  301 > rvm_debug 'Remote file does not exist https://rvm.io/binaries/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2'
++++ 1406736040.097937976 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
++++ 1406736040.101279170 /scripts/functions/logging : rvm_debug()  144 > return 0
++++ 1406736040.105034090 /scripts/functions/utility_system : __rvm_remote_server_path_single()  302 > return 1
++++ 1406736040.108821433 /scripts/functions/utility_system : __rvm_remote_server_path()  312 > : 1
++++ 1406736040.112719681 /scripts/functions/utility_system : __rvm_remote_server_path()  311 > __rvm_remote_server_path_single 0 1 1 ruby-2.1.0
++++ 1406736040.116445536 /scripts/functions/utility_system : __rvm_remote_server_path_single()  285 > typeset __remote_file
++++ 1406736040.119571445 /scripts/functions/utility_system : __rvm_remote_server_path_single()  286 > __rvm_calculate_remote_file 0 1 1 ruby-2.1.0
+++++ 1406736040.123490242 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > __rvm_db rvm_remote_server_url1
+++++ 1406736040.127197842 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736040.130288044 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_url1
+++++ 1406736040.133227958 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_url1
+++++ 1406736040.136123658 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736040.139214638 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736040.142891079 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_url1
++++++ 1406736040.145865249 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736040.148990042 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736040.151871641 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url1
++++++ 1406736040.154755339 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736040.157476986 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736040.160635691 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736040.164609157 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_url1
++++++ 1406736040.169138062 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736040.173070494 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url1=' /usr/local/rvm/user/db
++++++ 1406736040.173928532 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url1=##' -e '/^$/d'
++++++ 1406736040.178163476 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736040.178292089 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url1=##' -e '/^$/d'
++++++ 1406736040.182389792 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url1=' /usr/local/rvm/user/db
++++++ 1406736040.187907413 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736040.193604945 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736040.196720893 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736040.200085576 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736040.204202543 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_url1
++++++ 1406736040.207766091 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736040.211899857 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736040.216330355 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url1
++++++ 1406736040.222903183 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736040.226126273 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736040.229238408 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736040.232233902 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_url1
++++++ 1406736040.235643444 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736040.240175796 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url1=##' -e '/^$/d'
++++++ 1406736040.240937413 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url1=' /usr/local/rvm/config/db
++++++ 1406736040.243869235 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url1=##' -e '/^$/d'
++++++ 1406736040.246139120 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736040.250106565 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url1=' /usr/local/rvm/config/db
+++++ 1406736040.257758590 /scripts/functions/db : __rvm_db()  16 > value=http://jruby.org.s3.amazonaws.com
+++++ 1406736040.260688254 /scripts/functions/db : __rvm_db()  12 > [[ -n http://jruby.org.s3.amazonaws.com ]]
+++++ 1406736040.264168726 /scripts/functions/db : __rvm_db()  13 > [[ -n '' ]]
+++++ 1406736040.267909547 /scripts/functions/db : __rvm_db()  21 > echo http://jruby.org.s3.amazonaws.com
+++++ 1406736040.270968322 /scripts/functions/db : __rvm_db()  23 > true
++++ 1406736040.275758891 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > rvm_remote_server_url=http://jruby.org.s3.amazonaws.com
++++ 1406736040.279775461 /scripts/functions/utility_system : __rvm_calculate_remote_file()  2 > [[ -n http://jruby.org.s3.amazonaws.com ]]
++++ 1406736040.283455640 /scripts/functions/utility_system : __rvm_calculate_remote_file()  277 > __rvm_system_path '' 1
+++++ 1406736040.287716853 /scripts/functions/utility_system : __rvm_system_path()  212 > __rvm_db rvm_remote_server_path1
+++++ 1406736040.291459166 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736040.295163008 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_path1
+++++ 1406736040.299034445 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_path1
+++++ 1406736040.302966877 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736040.306353018 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736040.310850922 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_path1
++++++ 1406736040.314783522 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736040.317816324 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736040.321678123 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path1
++++++ 1406736040.325942178 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736040.329515545 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736040.332893544 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736040.336833195 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_path1
++++++ 1406736040.340603151 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736040.345207431 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path1=##' -e '/^$/d'
++++++ 1406736040.345745451 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path1=' /usr/local/rvm/user/db
++++++ 1406736040.350092311 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path1=##' -e '/^$/d'
++++++ 1406736040.351378669 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736040.355862987 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path1=' /usr/local/rvm/user/db
++++++ 1406736040.361932186 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736040.367460987 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736040.370310466 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736040.373902307 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736040.378411308 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_path1
++++++ 1406736040.381704013 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736040.384475609 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736040.387646694 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path1
++++++ 1406736040.390864800 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736040.393837199 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736040.397208675 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736040.400919069 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_path1
++++++ 1406736040.404563674 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736040.409347088 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path1=' /usr/local/rvm/config/db
++++++ 1406736040.409657347 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path1=##' -e '/^$/d'
++++++ 1406736040.414506084 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path1=##' -e '/^$/d'
++++++ 1406736040.414529500 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736040.419737624 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path1=' /usr/local/rvm/config/db
+++++ 1406736040.428717754 /scripts/functions/db : __rvm_db()  16 > value=downloads
+++++ 1406736040.432353452 /scripts/functions/db : __rvm_db()  12 > [[ -n downloads ]]
+++++ 1406736040.436118321 /scripts/functions/db : __rvm_db()  13 > [[ -n '' ]]
+++++ 1406736040.439791212 /scripts/functions/db : __rvm_db()  21 > echo downloads
+++++ 1406736040.580728821 /scripts/functions/db : __rvm_db()  23 > true
++++ 1406736040.586352291 /scripts/functions/utility_system : __rvm_system_path()  212 > rvm_remote_server_path=downloads
++++ 1406736040.590011478 /scripts/functions/utility_system : __rvm_system_path()  2 > [[ -n downloads ]]
++++ 1406736040.593090404 /scripts/functions/utility_system : __rvm_system_path()  4 > [[ '' == \- ]]
++++ 1406736040.596924906 /scripts/functions/utility_system : __rvm_calculate_remote_file()  278 > __rvm_ruby_package_file ruby-2.1.0
++++ 1406736040.600668860 /scripts/functions/utility_system : __rvm_ruby_package_file()  239 > case "$1" in
+++++ 1406736040.604349763 /scripts/functions/utility_system : __rvm_ruby_package_file()  262 > __rvm_remote_extension ruby-2.1.0 -
+++++ 1406736040.607924313 /scripts/functions/utility_system : __rvm_remote_extension()  222 > case "$1" in
+++++ 1406736040.610925233 /scripts/functions/utility_system : __rvm_remote_extension()  230 > rvm_remote_extension=tar.bz2
+++++ 1406736040.613743245 /scripts/functions/utility_system : __rvm_remote_extension()  12 > [[ - != \- ]]
+++++ 1406736040.616616214 /scripts/functions/utility_system : __rvm_remote_extension()  233 > printf %b tar.bz2
++++ 1406736040.620290593 /scripts/functions/utility_system : __rvm_ruby_package_file()  262 > rvm_ruby_package_file=/ruby-2.1.0.tar.bz2
++++ 1406736040.623651940 /scripts/functions/utility_system : __rvm_calculate_remote_file()  279 > __remote_file=http://jruby.org.s3.amazonaws.com/downloads/ruby-2.1.0.tar.bz2
++++ 1406736040.627043680 /scripts/functions/utility_system : __rvm_remote_server_path_single()  50 > [[ -z http://jruby.org.s3.amazonaws.com/downloads/ruby-2.1.0.tar.bz2 ]]
++++ 1406736040.630648155 /scripts/functions/utility_system : __rvm_remote_server_path_single()  293 > file_exists_at_url http://jruby.org.s3.amazonaws.com/downloads/ruby-2.1.0.tar.bz2
++++ 1406736040.634676754 /scripts/functions/utility : file_exists_at_url()  19 > [[ -n http://jruby.org.s3.amazonaws.com/downloads/ruby-2.1.0.tar.bz2 ]]
++++ 1406736040.638595066 /scripts/functions/utility : file_exists_at_url()  326 > unset curl
++++ 1406736040.642585192 /scripts/functions/utility : file_exists_at_url()  327 > file_exists_at_url_command http://jruby.org.s3.amazonaws.com/downloads/ruby-2.1.0.tar.bz2 --insecure
++++ 1406736040.647504027 /scripts/functions/utility : file_exists_at_url_command()  306 > __rvm_curl --silent --insecure --location --list-only --max-time 5 --head http://jruby.org.s3.amazonaws.com/downloads/ruby-2.1.0.tar.bz2 --insecure
++++ 1406736040.648317079 /scripts/functions/utility : file_exists_at_url_command()  308 > __rvm_grep -E 'HTTP/[0-9\.]+ 200 OK'
++++ 1406736040.907258071 /scripts/functions/utility : file_exists_at_url_command()  310 > typeset __ret=1
++++ 1406736040.910858964 /scripts/functions/utility : file_exists_at_url_command()  311 > case ${__ret} in
++++ 1406736040.914059126 /scripts/functions/utility : file_exists_at_url_command()  317 > return 1
++++ 1406736040.916704755 /scripts/functions/utility : file_exists_at_url()  329 > typeset __ret=1
++++ 1406736040.919320476 /scripts/functions/utility : file_exists_at_url()  330 > case ${__ret} in
++++ 1406736040.921955649 /scripts/functions/utility : file_exists_at_url()  339 > return 1
++++ 1406736040.925406149 /scripts/functions/utility_system : __rvm_remote_server_path_single()  -8 > [[ -f /usr/local/rvm/archives/ruby-2.1.0.tar.bz2 ]]
++++ 1406736040.928425493 /scripts/functions/utility_system : __rvm_remote_server_path_single()  301 > rvm_debug 'Remote file does not exist http://jruby.org.s3.amazonaws.com/downloads/ruby-2.1.0.tar.bz2'
++++ 1406736040.931516259 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
++++ 1406736040.934722919 /scripts/functions/logging : rvm_debug()  144 > return 0
++++ 1406736040.937808545 /scripts/functions/utility_system : __rvm_remote_server_path_single()  302 > return 1
++++ 1406736040.940884649 /scripts/functions/utility_system : __rvm_remote_server_path()  312 > : 2
++++ 1406736040.943820608 /scripts/functions/utility_system : __rvm_remote_server_path()  311 > __rvm_remote_server_path_single 0 1 2 ruby-2.1.0
++++ 1406736040.946717881 /scripts/functions/utility_system : __rvm_remote_server_path_single()  285 > typeset __remote_file
++++ 1406736040.949588489 /scripts/functions/utility_system : __rvm_remote_server_path_single()  286 > __rvm_calculate_remote_file 0 1 2 ruby-2.1.0
+++++ 1406736040.953817607 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > __rvm_db rvm_remote_server_url2
+++++ 1406736040.956908101 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736040.959584840 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_url2
+++++ 1406736040.962852758 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_url2
+++++ 1406736040.966085415 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736040.969237005 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736040.972934943 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_url2
++++++ 1406736040.975970807 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736040.979328481 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736040.982568730 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url2
++++++ 1406736040.986511695 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736040.989137669 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736040.991828934 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736040.994519760 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_url2
++++++ 1406736040.997364802 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736041.001249042 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url2=##' -e '/^$/d'
++++++ 1406736041.001341852 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url2=' /usr/local/rvm/user/db
++++++ 1406736041.005254476 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url2=##' -e '/^$/d'
++++++ 1406736041.005891953 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736041.009836385 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url2=' /usr/local/rvm/user/db
++++++ 1406736041.014031582 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736041.018545105 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736041.021194764 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736041.023983994 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736041.027992805 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_url2
++++++ 1406736041.031502689 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736041.034182263 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736041.037530486 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url2
++++++ 1406736041.040566827 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736041.043569818 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736041.046431761 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736041.049212531 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_url2
++++++ 1406736041.052054810 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736041.055581740 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url2=' /usr/local/rvm/config/db
++++++ 1406736041.055958286 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url2=##' -e '/^$/d'
++++++ 1406736041.059732092 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url2=##' -e '/^$/d'
++++++ 1406736041.060172676 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736041.065193809 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url2=' /usr/local/rvm/config/db
+++++ 1406736041.072666430 /scripts/functions/db : __rvm_db()  16 > value=http://binaries.rubini.us
+++++ 1406736041.075589869 /scripts/functions/db : __rvm_db()  12 > [[ -n http://binaries.rubini.us ]]
+++++ 1406736041.079227035 /scripts/functions/db : __rvm_db()  13 > [[ -n '' ]]
+++++ 1406736041.082661821 /scripts/functions/db : __rvm_db()  21 > echo http://binaries.rubini.us
+++++ 1406736041.085546292 /scripts/functions/db : __rvm_db()  23 > true
++++ 1406736041.089301049 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > rvm_remote_server_url=http://binaries.rubini.us
++++ 1406736041.092141152 /scripts/functions/utility_system : __rvm_calculate_remote_file()  2 > [[ -n http://binaries.rubini.us ]]
++++ 1406736041.094911310 /scripts/functions/utility_system : __rvm_calculate_remote_file()  277 > __rvm_system_path '' 2
+++++ 1406736041.098219682 /scripts/functions/utility_system : __rvm_system_path()  212 > __rvm_db rvm_remote_server_path2
+++++ 1406736041.101098127 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736041.103963850 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_path2
+++++ 1406736041.106641876 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_path2
+++++ 1406736041.109386870 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736041.112148757 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736041.115496017 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_path2
++++++ 1406736041.118244124 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736041.120994786 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736041.123568944 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path2
++++++ 1406736041.126497062 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736041.129537132 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736041.132563762 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736041.135282846 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_path2
++++++ 1406736041.138015790 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736041.142095706 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path2=' /usr/local/rvm/user/db
++++++ 1406736041.142316039 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path2=##' -e '/^$/d'
++++++ 1406736041.146743909 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path2=##' -e '/^$/d'
++++++ 1406736041.147076997 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736041.151802313 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path2=' /usr/local/rvm/user/db
++++++ 1406736041.156195275 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736041.161119321 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736041.164162372 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736041.167143626 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736041.170608332 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_path2
++++++ 1406736041.173542926 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736041.176449321 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736041.179290676 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path2
++++++ 1406736041.182654207 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736041.185642465 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736041.188507661 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736041.191493914 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_path2
++++++ 1406736041.194318607 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736041.199294090 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path2=##' -e '/^$/d'
++++++ 1406736041.199359631 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path2=' /usr/local/rvm/config/db
++++++ 1406736041.203565786 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path2=##' -e '/^$/d'
++++++ 1406736041.203883232 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736041.207868471 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path2=' /usr/local/rvm/config/db
++++++ 1406736041.212918244 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736041.218490001 /scripts/functions/db : __rvm_db()  16 > value=
+++++ 1406736041.221790515 /scripts/functions/db : __rvm_db()  12 > [[ -n '' ]]
+++++ 1406736041.225203589 /scripts/functions/db : __rvm_db()  18 > return 1
++++ 1406736041.228836794 /scripts/functions/utility_system : __rvm_system_path()  212 > rvm_remote_server_path=
++++ 1406736041.231739526 /scripts/functions/utility_system : __rvm_system_path()  2 > [[ -n '' ]]
++++ 1406736041.234982686 /scripts/functions/utility_system : __rvm_system_path()  214 > rvm_remote_server_path=ubuntu/14.04/x86_64
++++ 1406736041.238397885 /scripts/functions/utility_system : __rvm_system_path()  4 > [[ '' == \- ]]
++++ 1406736041.241108810 /scripts/functions/utility_system : __rvm_calculate_remote_file()  278 > __rvm_ruby_package_file ruby-2.1.0
++++ 1406736041.243789113 /scripts/functions/utility_system : __rvm_ruby_package_file()  239 > case "$1" in
+++++ 1406736041.247417379 /scripts/functions/utility_system : __rvm_ruby_package_file()  262 > __rvm_remote_extension ruby-2.1.0 -
+++++ 1406736041.250803348 /scripts/functions/utility_system : __rvm_remote_extension()  222 > case "$1" in
+++++ 1406736041.254146503 /scripts/functions/utility_system : __rvm_remote_extension()  230 > rvm_remote_extension=tar.bz2
+++++ 1406736041.257486740 /scripts/functions/utility_system : __rvm_remote_extension()  12 > [[ - != \- ]]
+++++ 1406736041.260819568 /scripts/functions/utility_system : __rvm_remote_extension()  233 > printf %b tar.bz2
++++ 1406736041.264379241 /scripts/functions/utility_system : __rvm_ruby_package_file()  262 > rvm_ruby_package_file=/ruby-2.1.0.tar.bz2
++++ 1406736041.268017553 /scripts/functions/utility_system : __rvm_calculate_remote_file()  279 > __remote_file=http://binaries.rubini.us/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2
++++ 1406736041.272017429 /scripts/functions/utility_system : __rvm_remote_server_path_single()  50 > [[ -z http://binaries.rubini.us/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 ]]
++++ 1406736041.275131905 /scripts/functions/utility_system : __rvm_remote_server_path_single()  293 > file_exists_at_url http://binaries.rubini.us/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2
++++ 1406736041.278883291 /scripts/functions/utility : file_exists_at_url()  19 > [[ -n http://binaries.rubini.us/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 ]]
++++ 1406736041.282424335 /scripts/functions/utility : file_exists_at_url()  326 > unset curl
++++ 1406736041.285417851 /scripts/functions/utility : file_exists_at_url()  327 > file_exists_at_url_command http://binaries.rubini.us/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 --insecure
++++ 1406736041.289406362 /scripts/functions/utility : file_exists_at_url_command()  306 > __rvm_curl --silent --insecure --location --list-only --max-time 5 --head http://binaries.rubini.us/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 --insecure
++++ 1406736041.290341579 /scripts/functions/utility : file_exists_at_url_command()  308 > __rvm_grep -E 'HTTP/[0-9\.]+ 200 OK'
++++ 1406736041.541762084 /scripts/functions/utility : file_exists_at_url_command()  310 > typeset __ret=1
++++ 1406736041.544879701 /scripts/functions/utility : file_exists_at_url_command()  311 > case ${__ret} in
++++ 1406736041.547802404 /scripts/functions/utility : file_exists_at_url_command()  317 > return 1
++++ 1406736041.550634844 /scripts/functions/utility : file_exists_at_url()  329 > typeset __ret=1
++++ 1406736041.553362686 /scripts/functions/utility : file_exists_at_url()  330 > case ${__ret} in
++++ 1406736041.556276302 /scripts/functions/utility : file_exists_at_url()  339 > return 1
++++ 1406736041.560719158 /scripts/functions/utility_system : __rvm_remote_server_path_single()  -8 > [[ -f /usr/local/rvm/archives/ruby-2.1.0.tar.bz2 ]]
++++ 1406736041.564356159 /scripts/functions/utility_system : __rvm_remote_server_path_single()  301 > rvm_debug 'Remote file does not exist http://binaries.rubini.us/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2'
++++ 1406736041.567855973 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
++++ 1406736041.571428529 /scripts/functions/logging : rvm_debug()  144 > return 0
++++ 1406736041.575027948 /scripts/functions/utility_system : __rvm_remote_server_path_single()  302 > return 1
++++ 1406736041.578271828 /scripts/functions/utility_system : __rvm_remote_server_path()  312 > : 3
++++ 1406736041.581531096 /scripts/functions/utility_system : __rvm_remote_server_path()  311 > __rvm_remote_server_path_single 0 1 3 ruby-2.1.0
++++ 1406736041.584736740 /scripts/functions/utility_system : __rvm_remote_server_path_single()  285 > typeset __remote_file
++++ 1406736041.588292714 /scripts/functions/utility_system : __rvm_remote_server_path_single()  286 > __rvm_calculate_remote_file 0 1 3 ruby-2.1.0
+++++ 1406736041.592275438 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > __rvm_db rvm_remote_server_url3
+++++ 1406736041.595532830 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736041.598808351 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_url3
+++++ 1406736041.602155669 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_url3
+++++ 1406736041.605270756 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736041.608639545 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736041.612168524 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_url3
++++++ 1406736041.615140919 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736041.617970772 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736041.620780192 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url3
++++++ 1406736041.623832650 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736041.626804848 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736041.629995149 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736041.633473572 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_url3
++++++ 1406736041.637107661 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736041.641498892 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url3=##' -e '/^$/d'
++++++ 1406736041.641882517 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url3=' /usr/local/rvm/user/db
++++++ 1406736041.645912645 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url3=##' -e '/^$/d'
++++++ 1406736041.646678187 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736041.650199079 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url3=' /usr/local/rvm/user/db
++++++ 1406736041.654819714 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736041.659530186 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736041.662606980 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736041.665610218 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736041.669074765 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_url3
++++++ 1406736041.672130659 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736041.674904235 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736041.677630305 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url3
++++++ 1406736041.680515066 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736041.683901518 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736041.686548836 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736041.689213175 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_url3
++++++ 1406736041.692179770 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736041.696193713 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url3=' /usr/local/rvm/config/db
++++++ 1406736041.697552551 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url3=##' -e '/^$/d'
++++++ 1406736041.700028154 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736041.701551793 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url3=##' -e '/^$/d'
++++++ 1406736041.704141821 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url3=' /usr/local/rvm/config/db
+++++ 1406736041.711331114 /scripts/functions/db : __rvm_db()  16 > value=https://rubies.travis-ci.org
+++++ 1406736041.714696711 /scripts/functions/db : __rvm_db()  12 > [[ -n https://rubies.travis-ci.org ]]
+++++ 1406736041.718065756 /scripts/functions/db : __rvm_db()  13 > [[ -n '' ]]
+++++ 1406736041.722301012 /scripts/functions/db : __rvm_db()  21 > echo https://rubies.travis-ci.org
+++++ 1406736041.726113709 /scripts/functions/db : __rvm_db()  23 > true
++++ 1406736041.730175922 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > rvm_remote_server_url=https://rubies.travis-ci.org
++++ 1406736041.733335361 /scripts/functions/utility_system : __rvm_calculate_remote_file()  2 > [[ -n https://rubies.travis-ci.org ]]
++++ 1406736041.736171967 /scripts/functions/utility_system : __rvm_calculate_remote_file()  277 > __rvm_system_path '' 3
+++++ 1406736041.739665931 /scripts/functions/utility_system : __rvm_system_path()  212 > __rvm_db rvm_remote_server_path3
+++++ 1406736041.742743866 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736041.746083305 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_path3
+++++ 1406736041.749046785 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_path3
+++++ 1406736041.755321632 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736041.758895039 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736041.763486667 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_path3
++++++ 1406736041.767658398 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736041.771360763 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736041.774661866 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path3
++++++ 1406736041.777704294 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736041.780484245 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736041.783834587 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736041.787240647 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_path3
++++++ 1406736041.790711851 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736041.794839843 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path3=' /usr/local/rvm/user/db
++++++ 1406736041.794646686 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path3=##' -e '/^$/d'
++++++ 1406736041.798331508 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path3=##' -e '/^$/d'
++++++ 1406736041.800215622 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736041.804795982 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path3=' /usr/local/rvm/user/db
++++++ 1406736041.810207131 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736041.815754693 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736041.818440035 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736041.821210990 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736041.824599215 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_path3
++++++ 1406736041.827758728 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736041.830734147 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736041.833580218 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path3
++++++ 1406736041.836522853 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736041.839385214 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736041.842131106 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736041.844859745 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_path3
++++++ 1406736041.847705171 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736041.852060571 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path3=' /usr/local/rvm/config/db
++++++ 1406736041.852100294 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path3=##' -e '/^$/d'
++++++ 1406736041.855654526 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path3=##' -e '/^$/d'
++++++ 1406736041.856037770 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736041.860146053 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path3=' /usr/local/rvm/config/db
++++++ 1406736041.865028064 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736041.869710912 /scripts/functions/db : __rvm_db()  16 > value=
+++++ 1406736041.872387663 /scripts/functions/db : __rvm_db()  12 > [[ -n '' ]]
+++++ 1406736041.875058904 /scripts/functions/db : __rvm_db()  18 > return 1
++++ 1406736041.879056066 /scripts/functions/utility_system : __rvm_system_path()  212 > rvm_remote_server_path=
++++ 1406736041.882371534 /scripts/functions/utility_system : __rvm_system_path()  2 > [[ -n '' ]]
++++ 1406736041.884903912 /scripts/functions/utility_system : __rvm_system_path()  214 > rvm_remote_server_path=ubuntu/14.04/x86_64
++++ 1406736041.887460224 /scripts/functions/utility_system : __rvm_system_path()  4 > [[ '' == \- ]]
++++ 1406736041.890263455 /scripts/functions/utility_system : __rvm_calculate_remote_file()  278 > __rvm_ruby_package_file ruby-2.1.0
++++ 1406736041.893050886 /scripts/functions/utility_system : __rvm_ruby_package_file()  239 > case "$1" in
+++++ 1406736041.896308258 /scripts/functions/utility_system : __rvm_ruby_package_file()  262 > __rvm_remote_extension ruby-2.1.0 -
+++++ 1406736041.899426450 /scripts/functions/utility_system : __rvm_remote_extension()  222 > case "$1" in
+++++ 1406736041.902897187 /scripts/functions/utility_system : __rvm_remote_extension()  230 > rvm_remote_extension=tar.bz2
+++++ 1406736041.906131880 /scripts/functions/utility_system : __rvm_remote_extension()  12 > [[ - != \- ]]
+++++ 1406736041.909012563 /scripts/functions/utility_system : __rvm_remote_extension()  233 > printf %b tar.bz2
++++ 1406736041.913374013 /scripts/functions/utility_system : __rvm_ruby_package_file()  262 > rvm_ruby_package_file=/ruby-2.1.0.tar.bz2
++++ 1406736041.916846566 /scripts/functions/utility_system : __rvm_calculate_remote_file()  279 > __remote_file=https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2
++++ 1406736041.920264612 /scripts/functions/utility_system : __rvm_remote_server_path_single()  50 > [[ -z https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 ]]
++++ 1406736041.923747513 /scripts/functions/utility_system : __rvm_remote_server_path_single()  293 > file_exists_at_url https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2
++++ 1406736041.928233564 /scripts/functions/utility : file_exists_at_url()  19 > [[ -n https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 ]]
++++ 1406736041.931423987 /scripts/functions/utility : file_exists_at_url()  326 > unset curl
++++ 1406736041.934272584 /scripts/functions/utility : file_exists_at_url()  327 > file_exists_at_url_command https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 --insecure
++++ 1406736041.938544752 /scripts/functions/utility : file_exists_at_url_command()  308 > __rvm_grep -E 'HTTP/[0-9\.]+ 200 OK'
++++ 1406736041.938821889 /scripts/functions/utility : file_exists_at_url_command()  306 > __rvm_curl --silent --insecure --location --list-only --max-time 5 --head https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2 --insecure
++++ 1406736042.508093116 /scripts/functions/utility : file_exists_at_url_command()  310 > typeset __ret=1
++++ 1406736042.511089250 /scripts/functions/utility : file_exists_at_url_command()  311 > case ${__ret} in
++++ 1406736042.514094338 /scripts/functions/utility : file_exists_at_url_command()  317 > return 1
++++ 1406736042.517304806 /scripts/functions/utility : file_exists_at_url()  329 > typeset __ret=1
++++ 1406736042.520905493 /scripts/functions/utility : file_exists_at_url()  330 > case ${__ret} in
++++ 1406736042.523997687 /scripts/functions/utility : file_exists_at_url()  339 > return 1
++++ 1406736042.527643078 /scripts/functions/utility_system : __rvm_remote_server_path_single()  -8 > [[ -f /usr/local/rvm/archives/ruby-2.1.0.tar.bz2 ]]
++++ 1406736042.530397934 /scripts/functions/utility_system : __rvm_remote_server_path_single()  301 > rvm_debug 'Remote file does not exist https://rubies.travis-ci.org/ubuntu/14.04/x86_64/ruby-2.1.0.tar.bz2'
++++ 1406736042.533393877 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
++++ 1406736042.536224142 /scripts/functions/logging : rvm_debug()  144 > return 0
++++ 1406736042.538938220 /scripts/functions/utility_system : __rvm_remote_server_path_single()  302 > return 1
++++ 1406736042.542451219 /scripts/functions/utility_system : __rvm_remote_server_path()  312 > : 4
++++ 1406736042.545706737 /scripts/functions/utility_system : __rvm_remote_server_path()  311 > __rvm_remote_server_path_single 0 1 4 ruby-2.1.0
++++ 1406736042.548701552 /scripts/functions/utility_system : __rvm_remote_server_path_single()  285 > typeset __remote_file
++++ 1406736042.551595767 /scripts/functions/utility_system : __rvm_remote_server_path_single()  286 > __rvm_calculate_remote_file 0 1 4 ruby-2.1.0
+++++ 1406736042.556372595 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > __rvm_db rvm_remote_server_url4
+++++ 1406736042.560092777 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736042.563995604 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_url4
+++++ 1406736042.567385761 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_url4
+++++ 1406736042.571710563 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736042.575213243 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736042.579287396 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_url4
++++++ 1406736042.582964393 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736042.586520191 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736042.589418781 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url4
++++++ 1406736042.592235492 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736042.594873627 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736042.597835874 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736042.600664683 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_url4
++++++ 1406736042.603429840 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736042.606964247 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url4=' /usr/local/rvm/user/db
++++++ 1406736042.608014859 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url4=##' -e '/^$/d'
++++++ 1406736042.610845490 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736042.611467164 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url4=##' -e '/^$/d'
++++++ 1406736042.614904771 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url4=' /usr/local/rvm/user/db
++++++ 1406736042.620961589 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736042.627031169 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736042.630117692 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736042.632992086 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736042.636956045 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_url4
++++++ 1406736042.640721217 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736042.643445321 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736042.646215667 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_url4
++++++ 1406736042.649393790 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736042.652634214 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736042.656279847 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736042.660184333 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_url4
++++++ 1406736042.663851175 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736042.668100242 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_url4=##' -e '/^$/d'
++++++ 1406736042.668564561 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_url4=' /usr/local/rvm/config/db
++++++ 1406736042.673075515 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_url4=##' -e '/^$/d'
++++++ 1406736042.673453790 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736042.677654088 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_url4=' /usr/local/rvm/config/db
++++++ 1406736042.683504262 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736042.689373544 /scripts/functions/db : __rvm_db()  16 > value=
+++++ 1406736042.692934860 /scripts/functions/db : __rvm_db()  12 > [[ -n '' ]]
+++++ 1406736042.696361596 /scripts/functions/db : __rvm_db()  18 > return 1
++++ 1406736042.700499897 /scripts/functions/utility_system : __rvm_calculate_remote_file()  272 > rvm_remote_server_url=
++++ 1406736042.704033197 /scripts/functions/utility_system : __rvm_calculate_remote_file()  2 > [[ -n '' ]]
++++ 1406736042.707567916 /scripts/functions/utility_system : __rvm_calculate_remote_file()  274 > rvm_debug 'rvm_remote_server_url4 not found'
++++ 1406736042.710612053 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
++++ 1406736042.713939332 /scripts/functions/logging : rvm_debug()  144 > return 0
++++ 1406736042.717530529 /scripts/functions/utility_system : __rvm_calculate_remote_file()  275 > return 0
++++ 1406736042.721162191 /scripts/functions/utility_system : __rvm_remote_server_path_single()  145 > [[ -z '' ]]
++++ 1406736042.724858164 /scripts/functions/utility_system : __rvm_remote_server_path_single()  290 > rvm_debug 'No remote file name found'
++++ 1406736042.728266603 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
++++ 1406736042.731831593 /scripts/functions/logging : rvm_debug()  144 > return 0
++++ 1406736042.735191811 /scripts/functions/utility_system : __rvm_remote_server_path_single()  291 > return 0
+++ 1406736042.738802042 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  221 > __rvm_ruby_url=
+++ 1406736042.743273210 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  222 > IFS=:
+++ 1406736042.746522881 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  222 > read __rvm_ruby_verify_download_flag __rvm_ruby_url
+++ 1406736042.750025955 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  152 > ((  1 > 0  ))
+++ 1406736042.753458026 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  226 > __rvm_ruby_verify_download_flag=
+++ 1406736042.756558667 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  157 > [[ -z '' ]]
+++ 1406736042.759572714 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  160 > ((  rvm_remote_flag  ))
+++ 1406736042.762841335 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  237 > __rvm_old_ruby ruby-2.1.0
+++ 1406736042.765821150 /scripts/functions/manage/base_install : __rvm_old_ruby()  205 > case "$1" in
+++ 1406736042.768770327 /scripts/functions/manage/base_install : __rvm_old_ruby()  207 > return 1
++++ 1406736042.773036182 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  244 > __rvm_system_path -
+++++ 1406736042.777656486 /scripts/functions/utility_system : __rvm_system_path()  212 > __rvm_db rvm_remote_server_path
+++++ 1406736042.781507574 /scripts/functions/db : __rvm_db()  7 > typeset value key variable
+++++ 1406736042.785669350 /scripts/functions/db : __rvm_db()  8 > key=rvm_remote_server_path
+++++ 1406736042.789179671 /scripts/functions/db : __rvm_db()  9 > key=rvm_remote_server_path
+++++ 1406736042.792809221 /scripts/functions/db : __rvm_db()  10 > variable=
+++++ 1406736042.796278462 /scripts/functions/db : __rvm_db()  6 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736042.800669562 /scripts/functions/db : __rvm_db()  13 > __rvm_db_ /usr/local/rvm/user/db rvm_remote_server_path
++++++ 1406736042.804207845 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736042.807521499 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/user/db
++++++ 1406736042.810819929 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path
++++++ 1406736042.814351896 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736042.817272212 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736042.820234873 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736042.823068698 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/user/db rvm_remote_server_path
++++++ 1406736042.825786653 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/user/db ]]
++++++ 1406736042.829160392 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path=' /usr/local/rvm/user/db
++++++ 1406736042.830125760 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path=##' -e '/^$/d'
++++++ 1406736042.833192613 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736042.834042399 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path=##' -e '/^$/d'
++++++ 1406736042.837922662 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path=' /usr/local/rvm/user/db
++++++ 1406736042.843180515 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736042.848814064 /scripts/functions/db : __rvm_db()  13 > value=
+++++ 1406736042.852321040 /scripts/functions/db : __rvm_db()  9 > [[ -z '' ]]
+++++ 1406736042.855778168 /scripts/functions/db : __rvm_db()  9 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736042.859365728 /scripts/functions/db : __rvm_db()  16 > __rvm_db_ /usr/local/rvm/config/db rvm_remote_server_path
++++++ 1406736042.862277861 /scripts/functions/db : __rvm_db_()  57 > typeset __db __key __value
++++++ 1406736042.865692634 /scripts/functions/db : __rvm_db_()  58 > __db=/usr/local/rvm/config/db
++++++ 1406736042.868717886 /scripts/functions/db : __rvm_db_()  59 > __key=rvm_remote_server_path
++++++ 1406736042.871563791 /scripts/functions/db : __rvm_db_()  60 > shift 2
++++++ 1406736042.874332248 /scripts/functions/db : __rvm_db_()  61 > __value=
++++++ 1406736042.877836753 /scripts/functions/db : __rvm_db_()  62 > case "${__value}" in
++++++ 1406736042.881199318 /scripts/functions/db : __rvm_db_()  67 > __rvm_db_get /usr/local/rvm/config/db rvm_remote_server_path
++++++ 1406736042.884186932 /scripts/functions/db : __rvm_db_get()  1 > [[ -f /usr/local/rvm/config/db ]]
++++++ 1406736042.887961316 /scripts/functions/db : __rvm_db_get()  50 > __rvm_grep '^rvm_remote_server_path=' /usr/local/rvm/config/db
++++++ 1406736042.888194201 /scripts/functions/db : __rvm_db_get()  50 > __rvm_sed -e 's#^rvm_remote_server_path=##' -e '/^$/d'
++++++ 1406736042.891283992 /scripts/functions/support : __rvm_sed()  251 > sed -e 's#^rvm_remote_server_path=##' -e '/^$/d'
++++++ 1406736042.892504702 /scripts/functions/support : __rvm_grep()  233 > GREP_OPTIONS=
++++++ 1406736042.896389940 /scripts/functions/support : __rvm_grep()  233 > grep '^rvm_remote_server_path=' /usr/local/rvm/config/db
++++++ 1406736042.902315702 /scripts/functions/support : __rvm_grep()  233 > return 1
+++++ 1406736042.907791326 /scripts/functions/db : __rvm_db()  16 > value=
+++++ 1406736042.910600237 /scripts/functions/db : __rvm_db()  12 > [[ -n '' ]]
+++++ 1406736042.913720974 /scripts/functions/db : __rvm_db()  18 > return 1
++++ 1406736042.917317953 /scripts/functions/utility_system : __rvm_system_path()  212 > rvm_remote_server_path=
++++ 1406736042.920065528 /scripts/functions/utility_system : __rvm_system_path()  2 > [[ -n '' ]]
++++ 1406736042.923131365 /scripts/functions/utility_system : __rvm_system_path()  214 > rvm_remote_server_path=ubuntu/14.04/x86_64
++++ 1406736042.925959705 /scripts/functions/utility_system : __rvm_system_path()  4 > [[ - == \- ]]
++++ 1406736042.928716681 /scripts/functions/utility_system : __rvm_system_path()  216 > printf %b 'ubuntu/14.04/x86_64\n'
+++ 1406736042.932100532 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  244 > rvm_warn 'No binary rubies available for: ubuntu/14.04/x86_64/ruby-2.1.0.
+Continuing with compilation. Please read '\''rvm help mount'\'' to get more information on binary rubies.'
+++ 1406736043.082293077 /scripts/functions/logging : rvm_warn()  137 > rvm_pretty_print stdout
+++ 1406736043.086389166 /scripts/functions/logging : rvm_pretty_print()  73 > case "${rvm_pretty_print_flag:=auto}" in
+++ 1406736043.089988139 /scripts/functions/logging : rvm_pretty_print()  78 > case "${TERM:-dumb}" in
+++ 1406736043.093574598 /scripts/functions/logging : rvm_pretty_print()  81 > case "$1" in
+++ 1406736043.097209865 /scripts/functions/logging : rvm_pretty_print()  10 > [[ -t 1 ]]
+++ 1406736043.101171608 /scripts/functions/logging : rvm_pretty_print()  82 > return 1
+++ 1406736043.105035370 /scripts/functions/logging : rvm_warn()  139 > printf %b 'No binary rubies available for: ubuntu/14.04/x86_64/ruby-2.1.0.
+Continuing with compilation. Please read '\''rvm help mount'\'' to get more information on binary rubies.\n'
+No binary rubies available for: ubuntu/14.04/x86_64/ruby-2.1.0.
+Continuing with compilation. Please read 'rvm help mount' to get more information on binary rubies.
+++ 1406736043.109123282 /scripts/functions/manage/base_install : __rvm_install_ruby_try_remote()  261 > return 2
+++ 1406736043.112316431 /scripts/functions/manage/base_install : __rvm_install_ruby()  304 > ((  2 == 2  ))
+++ 1406736043.114949049 /scripts/functions/manage/base_install : __rvm_install_ruby()  379 > __rvm_check_available_space ruby-2.1.0 sources
+++ 1406736043.117889126 /scripts/functions/manage/base_install : __rvm_check_available_space()  266 > typeset __required_space __free_space __i_have_no_idea
+++ 1406736043.120568529 /scripts/functions/manage/base_install : __rvm_check_available_space()  267 > __rvm_calculate_space_free /usr/local/rvm/rubies
++++ 1406736043.124837541 /scripts/functions/utility : __rvm_calculate_space_free()  414 > df -Pk /usr/local/rvm/rubies
++++ 1406736043.126856882 /scripts/functions/utility : __rvm_calculate_space_free()  414 > __rvm_awk 'BEGIN{x=4} /Free/{x=3} END{print $x}'
++++ 1406736043.130648531 /scripts/functions/support : __rvm_awk()  251 > awk 'BEGIN{x=4} /Free/{x=3} END{print $x}'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    50    0    50    0     0     89      0 --:--:-- --:--:-- --:--:--    89100    50    0    50    0     0     89      0 --:--:-- --:--:-- --:--:--    89
+++ 1406736043.701952899 /scripts/functions/utility : __rvm_calculate_space_free()  414 > __free_space=80%
+bash: 80%: syntax error: operand expected (error token is "%")
+++ 1406736043.706230548 /scripts/functions/manage/base : __rvm_manage_rubies()  123 > : manage_result:1
+++ 1406736043.709962116 /scripts/functions/manage/base : __rvm_manage_rubies()  126 > return 1
++ 1406736043.715204226 /scripts/functions/cli : __rvm_cli_install_ruby()  -36 > return 1
++ 1406736043.719747992 /scripts/cli : rvm()  806 > current_result=1
++ 1406736043.723590269 /scripts/cli : rvm()  807 > ((  result  ))
++ 1406736043.727492030 /scripts/cli : rvm()  807 > result=1
++ 1406736043.731916371 /scripts/cli : rvm()  809 > ((  result  ))
++ 1406736043.735952753 /scripts/cli : rvm()  823 > current_result=0
++ 1406736043.739468527 /scripts/cli : rvm()  824 > ((  result  ))
++ 1406736043.743408362 /scripts/cli : rvm()  826 > typeset __local_rvm_trace_flag
++ 1406736043.747236426 /scripts/cli : rvm()  827 > __local_rvm_trace_flag=1
++ 1406736043.751184332 /scripts/cli : rvm()  829 > __rvm_cli_autoreload
++ 1406736043.755333805 /scripts/functions/cli : __rvm_cli_autoreload()  2 > [[ 0 -eq 1 ]]
++ 1406736043.758788677 /scripts/functions/cli : __rvm_cli_autoreload()  14 > __rvm_teardown
++ 1406736043.762540437 /scripts/functions/environment : __rvm_teardown()  1 > builtin command -v __rvm_cleanup_tmp
++ 1406736043.765929955 /scripts/functions/environment : __rvm_teardown()  3 > __rvm_cleanup_tmp
++ 1406736043.769314187 /scripts/functions/cleanup : __rvm_cleanup_tmp()  2 > [[ -d /usr/local/rvm/tmp/ ]]
++ 1406736043.772920093 /scripts/functions/cleanup : __rvm_cleanup_tmp()  72 > case "${rvm_tmp_path%\/}" in
++ 1406736043.775908620 /scripts/functions/cleanup : __rvm_cleanup_tmp()  6 > __rvm_rm_rf '/usr/local/rvm/tmp/212*'
++ 1406736043.779603020 /scripts/functions/cleanup : __rvm_rm_rf()  1 > __rvm_rm_rf_verbose '/usr/local/rvm/tmp/212*'
++ 1406736043.782941424 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  1 > typeset target
++ 1406736043.786355789 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  2 > target='/usr/local/rvm/tmp/212*'
++ 1406736043.789557196 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  6 > [[ -n '' ]]
++ 1406736043.792938514 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  10 > [[ -n 4.3.8(1)-release ]]
++ 1406736043.796184294 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  12 > shopt -s extglob
++ 1406736043.799469653 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  28 > case "${target}" in
++ 1406736043.804153560 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  23 > [[ -z /usr/local/rvm/tmp/212* ]]
++ 1406736043.807431698 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  28 > [[ -d /usr/local/rvm/tmp/212* ]]
++ 1406736043.812303246 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  37 > [[ -f /usr/local/rvm/tmp/212* ]]
++ 1406736043.816693295 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  37 > [[ -L /usr/local/rvm/tmp/212* ]]
++ 1406736043.821117521 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  46 > rvm_debug '__rvm_rm_rf already gone: /usr/local/rvm/tmp/212*'
++ 1406736043.825470804 /scripts/functions/logging : rvm_debug()  1 > ((  0  ))
++ 1406736043.829738385 /scripts/functions/logging : rvm_debug()  1 > return 0
++ 1406736043.833084322 /scripts/functions/cleanup : __rvm_rm_rf_verbose()  -81 > true
++ 1406736043.836439896 /scripts/functions/cleanup : __rvm_cleanup_tmp()  -65 > true
++ 1406736043.839405088 /scripts/functions/environment : __rvm_teardown()  87 > export __rvm_env_loaded
++ 1406736043.842738144 /scripts/functions/environment : __rvm_teardown()  89 > : __rvm_env_loaded:1:
++ 1406736043.846770626 /scripts/functions/environment : __rvm_teardown()  91 > : __rvm_env_loaded:1:
++ 1406736043.849725352 /scripts/functions/environment : __rvm_teardown()  93 > : __rvm_env_loaded:0:
++ 1406736043.852766247 /scripts/functions/environment : __rvm_teardown()  95 > [[ -z /usr/local/rvm/tmp ]]
++ 1406736043.856348739 /scripts/functions/environment : __rvm_teardown()  95 > ((  __rvm_env_loaded > 0  ))
++ 1406736043.859530598 /scripts/functions/environment : __rvm_teardown()  100 > [[ -n 4.3.8(1)-release ]]
++ 1406736043.862426500 /scripts/functions/environment : __rvm_teardown()  102 > trap - 0 1 2 3 15
++ 1406736043.865205507 /scripts/functions/environment : __rvm_teardown()  105 > [[ -n '' ]]
++ 1406736043.867888986 /scripts/functions/environment : __rvm_teardown()  115 > [[ -n 0022 ]]
++ 1406736043.871723040 /scripts/functions/environment : __rvm_teardown()  117 > umask 0022
++ 1406736043.874944925 /scripts/functions/environment : __rvm_teardown()  118 > unset rvm_stored_umask
++ 1406736043.878873056 /scripts/functions/environment : __rvm_teardown()  121 > [[ '' == \1 ]]
++ 1406736043.881685206 /scripts/functions/environment : __rvm_teardown()  125 > __variables_definition unset
++ 1406736043.885164629 /scripts/functions/environment : __variables_definition()  1 > typeset -a __variables_list __array_list
++ 1406736043.888975789 /scripts/functions/environment : __variables_definition()  2 > typeset __method
++ 1406736043.892758128 /scripts/functions/environment : __variables_definition()  4 > __method=unset
++ 1406736043.896259751 /scripts/functions/environment : __variables_definition()  38 > __variables_list=(rvm_head_flag rvm_ruby_selected_flag rvm_user_install_flag rvm_path_flag rvm_cron_flag rvm_static_flag rvm_default_flag rvm_loaded_flag rvm_llvm_flag rvm_skip_autoreconf_flag rvm_18_flag rvm_19_flag rvm_20_flag rvm_21_flag rvm_force_autoconf_flag rvm_dump_environment_flag rvm_curl_flags rvm_rubygems_version rvm_verbose_flag rvm_debug_flag rvm_trace_flag __array_start rvm_skip_pristine_flag rvm_pretty_print_flag rvm_create_flag rvm_remove_flag rvm_movable_flag rvm_archive_flag rvm_gemdir_flag rvm_reload_flag rvm_auto_reload_flag rvm_disable_binary_flag rvm_ignore_gemsets_flag rvm_skip_gemsets_flag rvm_install_on_use_flag rvm_remote_flag rvm_verify_downloads_flag rvm_skip_openssl_flag rvm_gems_cache_path rvm_gems_path rvm_man_path rvm_ruby_gem_path rvm_ruby_log_path rvm_gems_cache_path rvm_archives_path rvm_docs_path rvm_environments_path rvm_examples_path rvm_gems_path rvm_gemsets_path rvm_help_path rvm_hooks_path rvm_lib_path rvm_log_path rvm_patches_path rvm_repos_path rvm_rubies_path rvm_scripts_path rvm_src_path rvm_tmp_path rvm_user_path rvm_usr_path rvm_wrappers_path rvm_stored_errexit rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_tag rvm_ruby_sha rvm_ruby_version rvm_ruby_package_file rvm_ruby_name rvm_ruby_name rvm_ruby_args rvm_ruby_user_tag rvm_ruby_patch detected_rvm_ruby_name __rvm_env_loaded next_token rvm_error_message rvm_gemset_name rvm_parse_break rvm_token rvm_action rvm_export_args rvm_gemset_separator rvm_expanding_aliases rvm_tar_command rvm_tar_options rvm_patch_original_pwd rvm_project_rvmrc rvm_archive_extension rvm_autoinstall_bundler_flag rvm_codesign_identity rvm_expected_gemset_name rvm_without_gems rvm_with_gems rvm_with_default_gems rvm_ignore_dotfiles_flag rvm_fuzzy_flag rvm_autolibs_flag rvm_autolibs_flag_number rvm_autolibs_flag_runner rvm_quiet_curl_flag rvm_max_time_flag rvm_error_clr rvm_warn_clr rvm_debug_clr rvm_notify_clr rvm_reset_clr rvm_error_color rvm_warn_color rvm_debug_color rvm_notify_color rvm_reset_color rvm_log_timestamp rvm_log_filesystem rvm_log_namelen rvm_show_log_lines_on_error)
++ 1406736043.900795339 /scripts/functions/environment : __variables_definition()  42 > __array_list=(rvm_patch_names rvm_ree_options rvm_autoconf_flags rvm_architectures)
++ 1406736043.905173595 /scripts/functions/environment : __variables_definition()  176 > case "${__method}" in
++ 1406736043.908459111 /scripts/functions/environment : __variables_definition()  46 > unset rvm_patch_names rvm_ree_options rvm_autoconf_flags rvm_architectures
++ 1406736043.912754726 /scripts/functions/environment : __variables_definition()  53 > unset rvm_head_flag rvm_ruby_selected_flag rvm_user_install_flag rvm_path_flag rvm_cron_flag rvm_static_flag rvm_default_flag rvm_loaded_flag rvm_llvm_flag rvm_skip_autoreconf_flag rvm_18_flag rvm_19_flag rvm_20_flag rvm_21_flag rvm_force_autoconf_flag rvm_dump_environment_flag rvm_curl_flags rvm_rubygems_version rvm_verbose_flag rvm_debug_flag rvm_trace_flag __array_start rvm_skip_pristine_flag rvm_pretty_print_flag rvm_create_flag rvm_remove_flag rvm_movable_flag rvm_archive_flag rvm_gemdir_flag rvm_reload_flag rvm_auto_reload_flag rvm_disable_binary_flag rvm_ignore_gemsets_flag rvm_skip_gemsets_flag rvm_install_on_use_flag rvm_remote_flag rvm_verify_downloads_flag rvm_skip_openssl_flag rvm_gems_cache_path rvm_gems_path rvm_man_path rvm_ruby_gem_path rvm_ruby_log_path rvm_gems_cache_path rvm_archives_path rvm_docs_path rvm_environments_path rvm_examples_path rvm_gems_path rvm_gemsets_path rvm_help_path rvm_hooks_path rvm_lib_path rvm_log_path rvm_patches_path rvm_repos_path rvm_rubies_path rvm_scripts_path rvm_src_path rvm_tmp_path rvm_user_path rvm_usr_path rvm_wrappers_path rvm_stored_errexit rvm_ruby_strings rvm_ruby_binary rvm_ruby_gem_home rvm_ruby_home rvm_ruby_interpreter rvm_ruby_irbrc rvm_ruby_major_version rvm_ruby_minor_version rvm_ruby_package_name rvm_ruby_patch_level rvm_ruby_release_version rvm_ruby_repo_url rvm_ruby_repo_branch rvm_ruby_revision rvm_ruby_tag rvm_ruby_sha rvm_ruby_version rvm_ruby_package_file rvm_ruby_name rvm_ruby_name rvm_ruby_args rvm_ruby_user_tag rvm_ruby_patch detected_rvm_ruby_name __rvm_env_loaded next_token rvm_error_message rvm_gemset_name rvm_parse_break rvm_token rvm_action rvm_export_args rvm_gemset_separator rvm_expanding_aliases rvm_tar_command rvm_tar_options rvm_patch_original_pwd rvm_project_rvmrc rvm_archive_extension rvm_autoinstall_bundler_flag rvm_codesign_identity rvm_expected_gemset_name rvm_without_gems rvm_with_gems rvm_with_default_gems rvm_ignore_dotfiles_flag rvm_fuzzy_flag rvm_autolibs_flag rvm_autolibs_flag_number rvm_autolibs_flag_runner rvm_quiet_curl_flag rvm_max_time_flag rvm_error_clr rvm_warn_clr rvm_debug_clr rvm_notify_clr rvm_reset_clr rvm_error_color rvm_warn_color rvm_debug_color rvm_notify_color rvm_reset_color rvm_log_timestamp rvm_log_filesystem rvm_log_namelen rvm_show_log_lines_on_error
++ 1406736043.916760339 /scripts/functions/environment : __rvm_teardown()  138 > builtin command -v __rvm_cleanup_download
++ 1406736043.920628966 /scripts/functions/environment : __rvm_teardown()  143 > return 0
++ 1406736043.924258316 /scripts/cli : rvm()  938 > ((  __local_rvm_trace_flag > 0  ))
++ 1406736043.927034158 /scripts/cli : rvm()  940 > set +o verbose
++ 1406736043.930330766 /scripts/cli : rvm()  941 > set +o xtrace

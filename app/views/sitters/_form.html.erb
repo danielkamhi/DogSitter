@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  
+  <%= form_for @sitter, :url => sitters_path, :html => { :multipart => true } do |form| %>
+  <%= form.file_field :avatar %>
+<% end %>
   <div class="field">
     <%= f.label :summary %><br>
     <%= f.text_area :summary %>
