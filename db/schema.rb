@@ -41,12 +41,12 @@ ActiveRecord::Schema.define(version: 20140730153226) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "fname"
+    t.string   "lname"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
-    t.string   "fname"
-    t.string   "lname"
   end
 
   add_index "sitters", ["dog_id"], name: "index_sitters_on_dog_id"
