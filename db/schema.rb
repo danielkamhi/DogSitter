@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140730151055) do
+ActiveRecord::Schema.define(version: 20140730153226) do
 
   create_table "dogs", force: true do |t|
     t.string   "breed"
@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20140730151055) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "fname"
+    t.string   "lname"
   end
 
   add_index "sitters", ["dog_id"], name: "index_sitters_on_dog_id"

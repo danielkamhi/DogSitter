@@ -5,6 +5,7 @@ class SittersController < ApplicationController
   # GET /sitters.json
   def index
     @sitters = Sitter.all
+    @user = current_user
   end
 
   # GET /sitters/1
@@ -73,5 +74,6 @@ class SittersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def sitter_params
       params.require(:sitter).permit(:dog_id, :summary, :years_of_experience, :insurance, :full_time, :doggie_cam, :solo_care, :avatar)
+      params.require(:sitter).permit(:dog_id, :fname, :lname, :summary, :years_of_experience, :insurance, :full_time, :doggie_cam, :solo_care)
     end
 end
