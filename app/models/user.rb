@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
   has_many :dogs
 
    def name
-    [first_name, last_name].compact.join(' ')
+    [fname, lname].compact.join(' ')
   end
 end

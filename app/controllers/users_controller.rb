@@ -11,6 +11,10 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+      @user = User.find(params[:id])
+    unless @user == current_user
+      redirect_to :back, :alert => "Access denied."
+    end
   end
 
   # GET /users/new
@@ -35,6 +39,13 @@ class UsersController < ApplicationController
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+    def show
+    @user = User.find(params[:id])
+    unless @user == current_user
+      redirect_to :back, :alert => "Access denied."
     end
   end
 
