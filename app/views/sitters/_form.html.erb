@@ -12,6 +12,14 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :fname, :value => "#{current_user.fname}" %>
+  </div>
+    <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :lname, :value => "#{current_user.lname}" %>
+  </div>
+  <div class="field">
     <%= f.label :summary %><br>
     <%= f.text_area :summary %>
   </div>
