@@ -14,6 +14,7 @@ gem "letter_opener", :group => :development
 gem 'cells'
 gem 'paperclip'
 gem 'bootstrap-sass'
+gem 'unicorn'
 # Use sqlite3 as the database for Active Record
 
 # Use SCSS for stylesheets
