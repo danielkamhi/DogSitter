@@ -36,13 +36,18 @@
 </p>
 
 <h3> Top Dog Sitters Based on Your Results </h3>
-<ul>
-<% @dog.sitters.each do |sitter| %>
-<li><%= link_to "#{sitter.fname}  "     "#{sitter.lname}" , sitter_path(sitter.id)%> | <%= "About: #{sitter.summary}"%></li>
-<% end %>
-<br/>
-</ul>
 
+<% if @dog.sitters.any? %>
+    <ul>
+    <% @dog.sitters.each do |sitter| %>
+    <li><%= link_to "#{sitter.fname}  ""#{sitter.lname}" , sitter_path(sitter.id)%> | <%=image_tag sitter.avatar.url(:thumb) %><%= "About: #{sitter.summary}"%> </li>
+    <% end %>
+    <br/>
+    </ul>
+<% else %> 
+    <%= "Sorry we could not find any Sitters based on your search results" %>  
+<% end %>   
+<%= link_to "Back", user_dogs_path(current_user.id)%>
 
 
 
