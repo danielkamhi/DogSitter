@@ -15,8 +15,10 @@ gem 'cells'
 gem 'paperclip'
 gem 'bootstrap-sass'
 gem 'unicorn'
+gem 'mandrill-api'
 # Use sqlite3 as the database for Active Record
 
+#gem 'debugger'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
