@@ -15,8 +15,9 @@ Rails.application.routes.draw do
     :registrations => :registrations
   }
   resources :sitters
-  resources :users
+  resources :users do
   resources :dogs
+end
 # 
   #root to: "users#index"
 

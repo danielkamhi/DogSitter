@@ -12,7 +12,10 @@
   <strong>Last Name:</strong>
   <%= @sitter.lname %>
 </p>
-
+<p>
+  <strong>Zipcode:</strong>
+  <%= @sitter.zip %>
+</p>
 <p>
   <strong>Summary:</strong>
   <%= @sitter.summary %>
@@ -41,6 +44,10 @@
 <p>
   <strong>Solo care:</strong>
   <%= @sitter.solo_care %>
+</p>
+<p>
+  <strong>Medical Status:</strong>
+  <%= @sitter.medical_status %>
 </p>
 
 <%= link_to 'Edit', edit_sitter_path(@sitter) %> |

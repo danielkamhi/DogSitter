@@ -4,17 +4,20 @@ class DogsController < ApplicationController
   # GET /dogs
   # GET /dogs.json
   def index
-    @dogs = Dog.all
+    @user = current_user
+    @dogs = @user.dogs
   end
 
   # GET /dogs/1
   # GET /dogs/1.json
   def show
+    @sitter = Sitter.all
   end
 
   # GET /dogs/new
   def new
     @dog = Dog.new
+    @user = current_user
   end
 
   # GET /dogs/1/edit
@@ -24,14 +27,16 @@ class DogsController < ApplicationController
   # POST /dogs
   # POST /dogs.json
   def create
-    @user = current_user.id
+    @user = current_user
     @dog = Dog.create(dog_params)
-    @dog.update(user_id: @user)
-    # @dog = Dog.new(dog_params)
+    @dog.update(user_id: @user.id)
+  
+
 
     respond_to do |format|
       if @dog.save
-        format.html { redirect_to @dog, notice: 'Dog was successfully created.' }
+        
+        format.html { redirect_to user_dogs_path, notice: 'Dog was successfully created.' }
         format.json { render :show, status: :created, location: @dog }
       else
         format.html { render :new }
@@ -72,6 +77,6 @@ class DogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dog_params
-      params.require(:dog).permit(:breed, :age, :medical_status, :user_id, :avatar)
+      params.require(:dog).permit(:breed, :age, :insurance, :full_time, :doggie_cam, :solo_care, :medical_status, :user_id, :avatar)
     end
 end

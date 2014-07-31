@@ -20,6 +20,10 @@
     <%= f.label :last_name %><br>
     <%= f.text_field :lname, :value => "#{current_user.lname}" %>
   </div>
+   <div class="field">
+    <%= f.label :Zipcode %><br>
+    <%= f.number_field :zip %>
+  </div>
   <div class="field">
     <%= f.label :summary %><br>
     <%= f.text_area :summary %>
@@ -43,6 +47,10 @@
   <div class="field">
     <%= f.label :solo_care %><br>
     <%= f.check_box :solo_care %>
+  </div>
+    <div class="field">
+    <%= f.label :medical_status%><br>
+    <%= f.check_box :medical_status%>
   </div>
   <div class="actions">
     <%= f.submit %>

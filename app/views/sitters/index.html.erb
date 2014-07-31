@@ -5,6 +5,12 @@
 <p>hello</p>
 
 
+
+
+
+
+
+
 <table>
   <thead>
     <tr>
@@ -17,6 +23,7 @@
       <th>Full time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
       <th>Doggie cam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
       <th>Solo care&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+       <th>Medical Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,13 +33,14 @@
       <tr>
        <td><%= sitter.fname %></td>
         <td><%= sitter.lname %></td>
-   
+   <td><%= image_tag sitter.avatar.url%></td>
         <td><%= sitter.summary %></td>
         <td><%= sitter.years_of_experience %></td>
         <td><%= sitter.insurance %></td>
         <td><%= sitter.full_time %></td>
         <td><%= sitter.doggie_cam %></td>
         <td><%= sitter.solo_care %></td>
+        <td><%= sitter.medical_status %></td>
         <td><%= link_to "#{sitter.fname}'s profile", sitter %></td>
         <!-- <td><%= link_to 'Edit', edit_sitter_path(sitter) %></td> -->
     <!--     <td><%= link_to 'Destroy', sitter, method: :delete, data: { confirm: 'Are you sure?' } %></td> --> -->

@@ -6,12 +6,13 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @user = current_user.id
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
-      @user = User.find(params[:id])
+      
     unless @user == current_user
       redirect_to :back, :alert => "Access denied."
     end

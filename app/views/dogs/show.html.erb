@@ -9,10 +9,25 @@
   <strong>Breed:</strong>
   <%= @dog.breed %>
 </p>
-
+<p>
+  <strong>Full Time:</strong>
+  <%= @dog.full_time %>
+</p>
+<p>
+  <strong>Insurance:</strong>
+  <%= @dog.insurance %>
+</p>
 <p>
   <strong>Age:</strong>
   <%= @dog.age %>
+</p>
+<p>
+  <strong>Doggie Cam:</strong>
+  <%= @dog.doggie_cam %>
+</p>
+<p>
+  <strong>Solo Care:</strong>
+  <%= @dog.solo_care %>
 </p>
 
 <p>
@@ -20,8 +35,18 @@
   <%= @dog.medical_status %>
 </p>
 
-<%= link_to "Find all of the DogSitters based on my criteria", sitters_path%><br />
+<h3> Top Dog Sitters Based on Your Results </h3>
+<ul>
+<% @dog.sitters.each do |sitter| %>
+<li><%= "Name: #{sitter.fname}     " "#{sitter.lname}" %> | <%= "About: #{sitter.summary}"%></li>
+<% end %>
+<br/>
+</ul>
 
-<%= link_to 'Add Another Dog', new_dog_path %>
-<%= link_to 'Edit', edit_dog_path(@dog) %> |
-<%= link_to 'Back', dogs_path %>
+
+
+
+
+
+
+

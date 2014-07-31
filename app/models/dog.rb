@@ -5,4 +5,21 @@ class Dog < ActiveRecord::Base
   
 	belongs_to :user
 	belongs_to :sitter
+
+  scope :insured, -> {where(insurance: true)}
+  scope :solo, -> {where(solo_care: true)} 
+  scope :full, -> {where(full_time: true)} 
+  scope :medical, -> {where(medical_status: true)}
+  scope :doggie, -> {where(doggie_cam: true)}  
+  scope :years, -> {where('years_of_experience <5')} 
+
+  def sitters
+  	sitters = Sitter.all
+  	sitters = sitters.insured if self.insurance == true
+  	sitters = sitters.full if self.full_time == true
+	sitters = sitters.medical if self.medical_status == true
+	sitters = sitters.solo if self.solo_care == true
+	sitters = sitters.doggie if self.doggie_cam == true
+	sitters
+  end
 end
