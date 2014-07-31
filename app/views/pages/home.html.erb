@@ -1,10 +1,21 @@
-</br>
-</br>
-</br>
-</br>
-
-<%= link_to "My Profile", user_path%>
-</br>
 
 
-<%= link_to "Find all of the DogSitters based on my criteria", sitters_path%><br />
+
+
+
+<h1>HELLO</h1>
+
+
+<% if current_user %>
+<%= link_to 'My Account', user_path(current_user.id) %>
+<% else%>
+<%= "Welcome to Pet Project" %>
+<% end %>
+
+<% if current_user %>
+	<% if current_user.sitters.any? %>
+	<%= link_to 'My Sitter Account', sitter_path(current_user.sitters.last.id) %>
+	<% else %>
+	<%= link_to 'Want to become a pet sitter?', new_sitter_path %>
+	<% end %>
+<% end %>	

@@ -1,6 +1,7 @@
 class RegistrationsController < Devise::RegistrationsController
-
-
+def home
+@user = current_user
+end
 
 protected
 

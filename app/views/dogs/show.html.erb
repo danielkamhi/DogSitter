@@ -38,7 +38,7 @@
 <h3> Top Dog Sitters Based on Your Results </h3>
 <ul>
 <% @dog.sitters.each do |sitter| %>
-<li><%= "Name: #{sitter.fname}     " "#{sitter.lname}" %> | <%= "About: #{sitter.summary}"%></li>
+<li><%= link_to "#{sitter.fname}  "     "#{sitter.lname}" , sitter_path(sitter.id)%> | <%= "About: #{sitter.summary}"%></li>
 <% end %>
 <br/>
 </ul>
