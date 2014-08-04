@@ -1,10 +1,7 @@
 
+<body id= "homePage">
 
-
-
-
-<h1>HELLO</h1>
-
+<h2> HELLO</h2>
 
 <% if current_user %>
 <%= link_to 'My Account', user_path(current_user.id) %>
@@ -19,3 +16,5 @@
 	<%= link_to 'Want to become a pet sitter?', new_sitter_path %>
 	<% end %>
 <% end %>	
+
+</body>

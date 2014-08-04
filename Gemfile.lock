@@ -95,7 +95,6 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
-    pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -197,7 +196,6 @@ DEPENDENCIES
   letter_opener
   mandrill-api
   paperclip
-  pg
   rails (= 4.1.4)
   rspec-rails
   sass-rails (~> 4.0.3)
